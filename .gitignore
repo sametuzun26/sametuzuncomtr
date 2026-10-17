@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs & Temp
+*.log
+screen.png
+
+# Local messages (keep .gitkeep / empty template)
+# data/messages.json

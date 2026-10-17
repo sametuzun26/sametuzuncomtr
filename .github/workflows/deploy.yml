@@ -1,0 +1,40 @@
+name: 🚀 Canli Sunucuya Dagitim (Deploy to Hosting)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🧪 Test & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Kodu Getir (Checkout)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 🐘 PHP Sozdizimi Testi (Syntax Check)
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: 🔍 PHP Dosyalarini Test Et
+        run: |
+          find . -name "*.php" -exec php -l {} \;
+
+      - name: 📂 Sunucuya FTP ile Senkronize Et
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/screen.png
+            **/DESIGN.md
+            **/code.html
+            **/index.html
