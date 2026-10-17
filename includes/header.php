@@ -8,13 +8,24 @@
 <html class="dark scroll-smooth" lang="<?= htmlspecialchars($config['site']['lang']) ?>">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+    <meta name="theme-color" content="#0a0e16"/>
+    <meta name="color-scheme" content="dark"/>
     <meta name="description" content="<?= htmlspecialchars($config['site']['description']) ?>"/>
     <meta name="author" content="<?= htmlspecialchars($config['site']['author']) ?>"/>
+    <link rel="manifest" href="manifest.json"/>
+
+    <!-- OpenGraph & Social Sharing Meta Tags -->
     <meta property="og:title" content="<?= htmlspecialchars($config['site']['title']) ?>"/>
     <meta property="og:description" content="<?= htmlspecialchars($config['site']['description']) ?>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="<?= htmlspecialchars($config['site']['url']) ?>"/>
+    <meta property="og:image" content="<?= htmlspecialchars($config['site']['url']) ?>/screen.png"/>
+    <meta property="og:site_name" content="<?= htmlspecialchars($config['profile']['brand']) ?>"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="<?= htmlspecialchars($config['site']['title']) ?>"/>
+    <meta name="twitter:description" content="<?= htmlspecialchars($config['site']['description']) ?>"/>
+    <meta name="twitter:image" content="<?= htmlspecialchars($config['site']['url']) ?>/screen.png"/>
 
     <title><?= htmlspecialchars($config['site']['title']) ?></title>
 
@@ -31,11 +42,29 @@
             main > :first-child { margin-top: 0 !important; }
             main > :last-child { margin-bottom: 0 !important; }
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
+        /* Custom neon scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: #0a0e16; }
-        ::-webkit-scrollbar-thumb { background: #262a33; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #4cd7f6; }
+        ::-webkit-scrollbar-thumb { 
+            background: #262a33; 
+            border-radius: 9999px; 
+            border: 2px solid #0a0e16; 
+        }
+        ::-webkit-scrollbar-thumb:hover { 
+            background: #06b6d4; 
+            box-shadow: 0 0 12px rgba(6, 182, 212, 0.8); 
+        }
+        * { scrollbar-width: thin; scrollbar-color: #262a33 #0a0e16; }
+
+        /* Card micro-elevation & cyber glow */
+        .card-glow-hover {
+            transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.28s;
+        }
+        .card-glow-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 34px -4px rgba(6, 182, 212, 0.16), 0 0 16px -2px rgba(6, 182, 212, 0.12);
+            border-color: rgba(6, 182, 212, 0.45);
+        }
 
         /* Subtle Developer Dot Grid Background */
         .bg-grid-dots {
@@ -209,4 +238,4 @@
         </div>
     </div>
 </header>
-<main class="w-full pt-20 bg-surface flex-1">
+<main class="w-full pt-20 pb-20 sm:pb-0 bg-surface flex-1">

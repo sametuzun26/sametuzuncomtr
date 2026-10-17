@@ -66,7 +66,7 @@
     </div>
 </footer>
 
-<!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp Button (Desktop) -->
 <?php if (!empty($config['contact']['whatsapp'])): ?>
 <?php 
     $waTarget = ltrim($config['contact']['whatsapp'], '@');
@@ -78,7 +78,7 @@
 <a href="<?= htmlspecialchars($waUrl) ?>" 
    target="_blank" 
    rel="noopener noreferrer" 
-   class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-4 py-3 rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:scale-105 active:scale-95 transition-all group"
+   class="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-4 py-3 rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.45)] hover:scale-105 active:scale-95 transition-all group"
    title="WhatsApp'tan Hızlı Mesaj Gönder (@<?= htmlspecialchars($waTarget) ?>)">
     <span class="relative flex h-3 w-3">
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
@@ -87,12 +87,135 @@
     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
-    <span class="font-code-md text-sm font-bold hidden sm:inline-block">WhatsApp İletişim</span>
+    <span class="font-code-md text-sm font-bold">WhatsApp İletişim</span>
 </a>
+
+<!-- Mobile Bottom Floating Action Dock (Sadece Mobilde Görünür) -->
+<div class="sm:hidden fixed bottom-3 left-3 right-3 z-40 bg-surface-container-high/90 backdrop-blur-xl border border-surface-container-highest/80 rounded-2xl p-1.5 px-3 flex items-center justify-around shadow-[0_8px_32px_rgba(0,0,0,0.55)]">
+    <a href="#work-section" class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-primary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 20px;">rocket_launch</span>
+        <span class="font-code-sm text-[10px] font-bold">Projeler</span>
+    </a>
+    <?php if (!empty($config['profile']['cv_url'])): ?>
+    <a href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" target="_blank" class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-tertiary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 20px;">description</span>
+        <span class="font-code-sm text-[10px] font-bold">CV İndir</span>
+    </a>
+    <?php endif; ?>
+    <a href="<?= htmlspecialchars($waUrl) ?>" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-0.5 py-1 px-3.5 bg-[#25D366] text-white rounded-xl shadow-[0_2px_12px_rgba(37,211,102,0.4)] active:scale-95 transition-transform">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span class="font-code-sm text-[10px] font-bold">WhatsApp</span>
+    </a>
+    <a href="#contact-section" class="flex flex-col items-center gap-1 py-1 px-2 text-on-surface-variant hover:text-primary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 20px;">chat</span>
+        <span class="font-code-sm text-[10px] font-bold">İletişim</span>
+    </a>
+</div>
 <?php endif; ?>
+
+<!-- Interactive Project Case Study Lightbox / Modal -->
+<div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md transition-opacity duration-300">
+    <div class="relative w-full max-w-2xl max-h-[90vh] bg-surface-container rounded-2xl border border-surface-container-high shadow-2xl overflow-y-auto flex flex-col">
+        <!-- Modal Header -->
+        <div class="sticky top-0 z-10 bg-surface-container/95 backdrop-blur-md px-6 py-4 border-b border-surface-container-high flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+                <span id="modal-category" class="font-code-sm text-xs font-bold text-primary uppercase">CASE STUDY</span>
+            </div>
+            <button id="close-modal-btn" class="p-1 rounded-lg bg-surface-container-high text-on-surface hover:text-primary transition-colors" aria-label="Kapat">
+                <span class="material-symbols-outlined" style="font-size: 20px;">close</span>
+            </button>
+        </div>
+        <!-- Modal Body -->
+        <div class="p-6 space-y-6">
+            <div class="rounded-xl overflow-hidden h-48 sm:h-64 bg-surface-container-highest border border-surface-container-high relative">
+                <img id="modal-image" src="" alt="Proje Önizleme" class="w-full h-full object-cover"/>
+            </div>
+            <div>
+                <h3 id="modal-title" class="font-headline-lg text-2xl font-bold text-on-surface"></h3>
+                <p id="modal-desc" class="font-body-md text-sm text-on-surface-variant mt-2 leading-relaxed"></p>
+            </div>
+            <!-- Problem & Solution Block -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high/60">
+                    <span class="font-code-sm text-xs text-error font-bold flex items-center gap-1.5 mb-1.5">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">crisis_alert</span>
+                        <span>Çözülen Problem</span>
+                    </span>
+                    <p id="modal-problem" class="font-body-sm text-xs text-on-surface-variant leading-relaxed"></p>
+                </div>
+                <div class="p-4 rounded-xl bg-surface-container-low border border-surface-container-high/60">
+                    <span class="font-code-sm text-xs text-tertiary font-bold flex items-center gap-1.5 mb-1.5">
+                        <span class="material-symbols-outlined" style="font-size: 16px;">verified</span>
+                        <span>Uygulanan Çözüm</span>
+                    </span>
+                    <p id="modal-solution" class="font-body-sm text-xs text-on-surface-variant leading-relaxed"></p>
+                </div>
+            </div>
+            <!-- Architecture & Metrics -->
+            <div class="p-4 rounded-xl bg-surface-container-lowest border border-surface-container-high/50">
+                <span class="font-label-caps text-xs text-outline uppercase font-semibold block mb-2">MİMARİ &amp; TEKNOLOJİLER</span>
+                <div id="modal-tags" class="flex flex-wrap gap-1.5 mb-4"></div>
+                <div id="modal-metrics" class="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-3 border-t border-surface-container-high/40"></div>
+            </div>
+        </div>
+        <!-- Modal Footer -->
+        <div class="sticky bottom-0 bg-surface-container/95 backdrop-blur-md px-6 py-4 border-t border-surface-container-high flex items-center justify-between gap-3">
+            <span class="font-code-sm text-xs text-on-surface-variant hidden sm:inline">Projeyi beğendiniz mi?</span>
+            <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+                <button type="button" id="close-modal-bottom-btn" class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-code-sm text-xs transition-colors">
+                    Kapat
+                </button>
+                <a id="modal-action-btn" href="#contact-section" class="px-5 py-2 rounded-lg bg-primary-container text-on-primary-container font-code-sm text-xs font-bold hover:scale-[1.02] transition-transform shadow-[0_0_16px_rgba(6,182,212,0.3)]">
+                    Buna Benzer Proje Konuşalım
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Canvas Confetti CDN -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
 <!-- Scripts -->
 <script>
+    // Global Toast Notification System
+    window.showToast = function(msg) {
+        let toast = document.getElementById('global-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'global-toast';
+            toast.className = 'fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 px-4 py-3 rounded-xl bg-surface-container-highest border border-primary/40 text-on-surface font-code-sm text-xs shadow-2xl flex items-center gap-2.5 transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none backdrop-blur-lg';
+            document.body.appendChild(toast);
+        }
+        toast.innerHTML = `<span class="material-symbols-outlined text-primary" style="font-size: 18px;">check_circle</span><span>${msg}</span>`;
+        toast.classList.remove('translate-y-12', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        clearTimeout(window._toastTimeout);
+        window._toastTimeout = setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-12', 'opacity-0');
+        }, 2800);
+    };
+
+    // Click to copy elements
+    document.addEventListener('click', (e) => {
+        const copyTarget = e.target.closest('[data-copy]');
+        if (copyTarget) {
+            e.preventDefault();
+            const textToCopy = copyTarget.getAttribute('data-copy');
+            if (textToCopy) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showToast(`Kopyalandı: ${textToCopy}`);
+                }).catch(() => {
+                    showToast(`Panoya kopyalanamadı`);
+                });
+            }
+        }
+    });
+
     // 1. Mobile Menu Toggle
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -153,15 +276,19 @@
     const copyBtn = document.getElementById('copy-log-btn');
     if (copyBtn) {
         copyBtn.addEventListener('click', () => {
-            const originalHTML = copyBtn.innerHTML;
-            copyBtn.innerHTML = '<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">done</span>';
-            setTimeout(() => {
-                copyBtn.innerHTML = originalHTML;
-            }, 1800);
+            const logText = `const samet = {\n  name: "Samet Uzun",\n  role: "Full-Stack Web Geliştirici",\n  experience: "PixelByte (Web Dev) & Ar-Ge",\n  education: "MCBÜ (Mezun) & Anadolu Üniv.",\n  location: "Bilecik / Eskişehir (Remote)",\n  stack: ["PHP 8", "MySQL", "Tailwind", "AI Tools"],\n  email: "sametuzun2626@gmail.com"\n};`;
+            navigator.clipboard.writeText(logText).then(() => {
+                showToast('Geliştirici kartı panoya kopyalandı! 📋');
+                const originalHTML = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">done</span>';
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalHTML;
+                }, 1800);
+            });
         });
     }
 
-    // 4. Contact Form AJAX Handler
+    // 4. Contact Form AJAX Handler with Confetti
     const contactForm = document.getElementById('project-engagement-form');
     const feedbackBox = document.getElementById('form-feedback');
     const feedbackText = document.getElementById('feedback-text');
@@ -189,6 +316,17 @@
                     feedbackBox.className = 'p-4 rounded-lg bg-tertiary/10 border border-tertiary/30 text-tertiary flex items-center gap-3 font-code-sm text-sm';
                     feedbackText.innerHTML = result.message || 'Mesajınız başarıyla iletildi!';
                     contactForm.reset();
+
+                    // Joyful Cyber Confetti
+                    if (typeof confetti === 'function') {
+                        confetti({
+                            particleCount: 90,
+                            spread: 75,
+                            origin: { y: 0.6 },
+                            colors: ['#4cd7f6', '#4edea3', '#c0c1ff', '#06b6d4', '#ffffff']
+                        });
+                    }
+                    showToast('Mesajınız başarıyla iletildi! 🎉');
                 } else {
                     feedbackBox.className = 'p-4 rounded-lg bg-error/10 border border-error/30 text-error flex items-center gap-3 font-code-sm text-sm';
                     feedbackText.innerHTML = result.message || 'Bir hata oluştu. Lütfen tekrar deneyin.';
@@ -225,6 +363,84 @@
                 }
             }
         });
+    });
+
+    // 6. Case Study Lightbox / Modal Handler
+    const projectModal = document.getElementById('project-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const closeModalBottomBtn = document.getElementById('close-modal-bottom-btn');
+    const modalCategory = document.getElementById('modal-category');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalProblem = document.getElementById('modal-problem');
+    const modalSolution = document.getElementById('modal-solution');
+    const modalTags = document.getElementById('modal-tags');
+    const modalMetrics = document.getElementById('modal-metrics');
+    const modalImage = document.getElementById('modal-image');
+    const modalActionBtn = document.getElementById('modal-action-btn');
+
+    window.openProjectModal = function(data) {
+        if (!projectModal) return;
+        modalCategory.textContent = data.category_label || 'CASE STUDY';
+        modalTitle.textContent = data.title;
+        modalDesc.textContent = data.desc;
+        modalProblem.textContent = data.problem || 'Karmaşık veri ve iş süreçlerini hızlı, güvenilir ve modern bir web arayüzünde kullanıcıya sunma gereksinimi.';
+        modalSolution.textContent = data.solution || 'Temiz PHP mimarisi, optimize edilmiş MySQL sorguları ve responsive Tailwind CSS arayüzü ile yüksek performanslı çözüm.';
+        modalImage.src = data.image;
+
+        // Tags
+        modalTags.innerHTML = '';
+        (data.tags || []).forEach(tag => {
+            const span = document.createElement('span');
+            span.className = 'px-2 py-0.5 rounded bg-surface-container-high text-primary font-code-sm text-xs font-semibold';
+            span.textContent = tag;
+            modalTags.appendChild(span);
+        });
+
+        // Metrics
+        modalMetrics.innerHTML = '';
+        (data.metrics || []).forEach(m => {
+            const div = document.createElement('div');
+            div.className = 'p-2 rounded bg-surface-container';
+            div.innerHTML = `<span class="font-label-caps text-[10px] text-outline block font-semibold">${m.label}</span><span class="font-code-md text-xs font-bold ${m.color}">${m.val}</span>`;
+            modalMetrics.appendChild(div);
+        });
+
+        // Contact action pre-fill
+        if (modalActionBtn) {
+            modalActionBtn.onclick = function() {
+                projectModal.classList.add('hidden');
+                document.body.style.overflow = '';
+                const notes = document.getElementById('project-notes');
+                if (notes) {
+                    notes.value = `Merhaba Samet, portfolyondaki "${data.title}" projesini inceledim, buna benzer bir çalışma üzerine konuşmak istiyorum.`;
+                    notes.focus();
+                }
+            };
+        }
+
+        projectModal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    };
+
+    function closeProjectModal() {
+        if (projectModal) {
+            projectModal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    }
+
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeProjectModal);
+    if (closeModalBottomBtn) closeModalBottomBtn.addEventListener('click', closeProjectModal);
+    if (projectModal) {
+        projectModal.addEventListener('click', (e) => {
+            if (e.target === projectModal) closeProjectModal();
+        });
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && projectModal && !projectModal.classList.contains('hidden')) {
+            closeProjectModal();
+        }
     });
 </script>
 </body>

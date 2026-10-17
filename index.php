@@ -108,31 +108,31 @@ include __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Terminal / Object Stream -->
-                    <div class="font-code-sm text-xs space-y-2 text-on-surface-variant bg-surface-container p-4 rounded-xl overflow-x-auto min-h-[300px]">
+                    <div class="font-code-sm text-[11px] sm:text-xs space-y-1.5 sm:space-y-2 text-on-surface-variant bg-surface-container p-3 sm:p-4 rounded-xl overflow-x-auto max-h-[340px] sm:max-h-none overflow-y-auto">
                         <p class="text-secondary font-bold">// Samet Uzun — Geliştirici Kartı</p>
                         <p class="text-primary">const <span class="text-on-surface">samet</span> = {</p>
-                        <p class="pl-4">name: <span class="text-tertiary">"Samet Uzun"</span>,</p>
-                        <p class="pl-4">role: <span class="text-tertiary">"Full-Stack Web Geliştirici"</span>,</p>
-                        <p class="pl-4">experience: <span class="text-tertiary">"PixelByte (Web Dev) &amp; Ar-Ge"</span>,</p>
-                        <p class="pl-4">education: <span class="text-tertiary">"MCBÜ (Mezun) &amp; Anadolu Üniv."</span>,</p>
-                        <p class="pl-4">location: <span class="text-tertiary">"Bilecik / Eskişehir (Remote)"</span>,</p>
-                        <p class="pl-4">social: { github: <span class="text-tertiary">"@sametuzun26"</span>, ig: <span class="text-tertiary">"@rsametuzun"</span> },</p>
-                        <p class="pl-4">stack: [<span class="text-tertiary">"PHP 8"</span>, <span class="text-tertiary">"MySQL"</span>, <span class="text-tertiary">"Tailwind"</span>, <span class="text-tertiary">"AI Tools"</span>],</p>
-                        <p class="pl-4">interests: [<span class="text-secondary">"Temiz Kod"</span>, <span class="text-secondary">"Yapay Zeka"</span>, <span class="text-secondary">"Kahve ☕"</span>],</p>
-                        <p class="pl-4">status: <span class="text-tertiary">"Yeni fikirlere &amp; tanışmalara açık 🚀"</span></p>
+                        <p class="pl-3 sm:pl-4">name: <span class="text-tertiary">"Samet Uzun"</span>,</p>
+                        <p class="pl-3 sm:pl-4">role: <span class="text-tertiary">"Full-Stack Web Geliştirici"</span>,</p>
+                        <p class="pl-3 sm:pl-4">experience: <span class="text-tertiary">"PixelByte (Web Dev) &amp; Ar-Ge"</span>,</p>
+                        <p class="pl-3 sm:pl-4">education: <span class="text-tertiary">"MCBÜ (Mezun) &amp; Anadolu Üniv."</span>,</p>
+                        <p class="pl-3 sm:pl-4">location: <span class="text-tertiary">"Bilecik / Eskişehir (Remote)"</span>,</p>
+                        <p class="pl-3 sm:pl-4">social: { github: <span class="text-tertiary">"@sametuzun26"</span>, ig: <span class="text-tertiary">"@rsametuzun"</span> },</p>
+                        <p class="pl-3 sm:pl-4">stack: [<span class="text-tertiary">"PHP 8"</span>, <span class="text-tertiary">"MySQL"</span>, <span class="text-tertiary">"Tailwind"</span>, <span class="text-tertiary">"AI Tools"</span>],</p>
+                        <p class="pl-3 sm:pl-4">interests: [<span class="text-secondary">"Temiz Kod"</span>, <span class="text-secondary">"Yapay Zeka"</span>, <span class="text-secondary">"Kahve ☕"</span>],</p>
+                        <p class="pl-3 sm:pl-4">status: <span class="text-tertiary">"Yeni fikirlere &amp; tanışmalara açık 🚀"</span></p>
                         <p class="text-primary">};</p>
-                        <div class="bg-surface-container-high p-2 rounded-lg my-2 flex items-center justify-between">
+                        <div class="bg-surface-container-high p-2 rounded-lg my-1.5 sm:my-2 flex items-center justify-between">
                             <span class="text-primary">samet.sayHello();</span>
                             <span class="text-tertiary font-bold">&quot;Birlikte üretelim!&quot;</span>
                         </div>
                         <p class="text-on-surface pt-1 flex items-center">
                             <span class="text-primary mr-1">samet@sametuzun:~$</span>
-                            <span class="inline-block w-2 h-4 bg-primary animate-pulse ml-0.5"></span>
+                            <span class="inline-block w-2 h-3.5 bg-primary animate-pulse ml-0.5"></span>
                         </p>
                     </div>
 
                     <!-- Terminal Footer -->
-                    <div class="flex items-center justify-between pt-3 text-outline font-code-sm text-xs">
+                    <div class="flex items-center justify-between pt-3 text-outline font-code-sm text-[11px] sm:text-xs">
                         <span>ORTAM: Modern Web</span>
                         <span class="text-tertiary">DURUM: Aktif &amp; Çevrimiçi</span>
                         <span>HIZ: &lt;0.6sn</span>
@@ -156,24 +156,72 @@ include __DIR__ . '/includes/header.php';
             <div class="animate-marquee flex items-center gap-3.5 py-1.5">
                 <?php 
                 $techBadges = [
-                    ['name' => 'PHP 8.2+', 'icon' => 'code', 'highlight' => 'text-[#8993be]', 'border' => 'border-[#8993be]/30'],
-                    ['name' => 'MySQL / MariaDB', 'icon' => 'database', 'highlight' => 'text-[#00758F]', 'border' => 'border-[#00758F]/30'],
-                    ['name' => 'Tailwind CSS', 'icon' => 'palette', 'highlight' => 'text-[#06B6D4]', 'border' => 'border-[#06B6D4]/30'],
-                    ['name' => 'JavaScript (ES6+)', 'icon' => 'terminal', 'highlight' => 'text-[#F7DF1E]', 'border' => 'border-[#F7DF1E]/30'],
-                    ['name' => 'HTML5 / Semantic', 'icon' => 'html', 'highlight' => 'text-[#E34F26]', 'border' => 'border-[#E34F26]/30'],
-                    ['name' => 'REST API Entegrasyonu', 'icon' => 'sync_alt', 'highlight' => 'text-tertiary', 'border' => 'border-tertiary/30'],
-                    ['name' => 'Sanal POS (Iyzico/PayTR)', 'icon' => 'credit_card', 'highlight' => 'text-primary', 'border' => 'border-primary/30'],
-                    ['name' => 'Mobil Öncelikli UI', 'icon' => 'devices', 'highlight' => 'text-secondary', 'border' => 'border-secondary/30'],
-                    ['name' => 'Google Lighthouse 98+', 'icon' => 'speed', 'highlight' => 'text-tertiary', 'border' => 'border-tertiary/30'],
-                    ['name' => 'Git Versiyon Kontrolü', 'icon' => 'source', 'highlight' => 'text-on-surface', 'border' => 'border-surface-container-high'],
-                    ['name' => 'Nginx & Apache', 'icon' => 'dns', 'highlight' => 'text-[#009639]', 'border' => 'border-[#009639]/30'],
-                    ['name' => '256-Bit SSL Şifreleme', 'icon' => 'verified_user', 'highlight' => 'text-primary', 'border' => 'border-primary/30'],
+                    [
+                        'name' => 'PHP 8.2+',
+                        'svg' => '<svg class="w-4 h-4 text-[#777BB4] fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-4.5 13.5H6.2l1.6-7h2.4c1.3 0 2.1.8 1.9 2-.2 1.4-1.2 2-2.3 2H8.6l-.7 3zm5.6 0H11.8l1.6-7h1.3l-.3 1.5c.5-.9 1.4-1.6 2.4-1.6 1.4 0 2 1 1.7 2.4l-1.1 4.7h-1.3l1-4.4c.2-.8-.1-1.3-.9-1.3-.8 0-1.5.7-1.8 1.8l-.9 3.9zm5.9-4.8c-.3 1.5-1.5 2.1-2.7 2.1h-1.1l-.6 2.7h-1.3l1.6-7h2.3c1.3 0 2.1.8 1.8 2.2zm-9.3-3.2l-.5 2.2h1.1c.7 0 1.2-.4 1.3-1 .1-.6-.2-1.2-1-1.2h-.9zm7.3 0l-.5 2.2h1c.7 0 1.3-.4 1.4-1 .1-.7-.2-1.2-1-1.2h-.9z"/></svg>',
+                        'border' => 'border-[#777BB4]/35'
+                    ],
+                    [
+                        'name' => 'MySQL / MariaDB',
+                        'svg' => '<svg class="w-4 h-4 text-[#00758F] fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2zm-6 4.78c1.38.79 3.55 1.22 6 1.22s4.62-.43 6-1.22V12c0 .5-2.13 2-6 2s-6-1.5-6-2V9.78zm0 5c1.38.79 3.55 1.22 6 1.22s4.62-.43 6-1.22V17c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.22z"/></svg>',
+                        'border' => 'border-[#00758F]/35'
+                    ],
+                    [
+                        'name' => 'Tailwind CSS',
+                        'svg' => '<svg class="w-4 h-4 text-[#06B6D4] fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>',
+                        'border' => 'border-[#06B6D4]/35'
+                    ],
+                    [
+                        'name' => 'JavaScript (ES6+)',
+                        'svg' => '<svg class="w-4 h-4 text-[#F7DF1E] fill-current shrink-0" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.63-1.514-.946-2.58-.946-1.425 0-2.476.795-2.73 1.996-.285 1.305.42 2.235 1.89 2.82.9.39 1.47.646 1.636 1.156.24.69-.27 1.126-1.275 1.126-1.066 0-1.606-.57-2.041-1.396l-1.815 1.051c.361.765.811 1.305 1.426 1.68 1.006.6 2.37.75 3.51.525 1.77-.345 2.76-1.515 2.58-3.468zm-8.851-7.261h-2.265v6.526c0 1.2-.18 1.845-.735 2.205-.555.36-1.29.345-1.785.24-.39-.105-.721-.33-.946-.645l-1.666 1.2c.45.72 1.11 1.26 1.936 1.545 1.125.39 2.58.33 3.615-.36 1.185-.795 1.846-2.146 1.846-4.186v-6.525z"/></svg>',
+                        'border' => 'border-[#F7DF1E]/35'
+                    ],
+                    [
+                        'name' => 'HTML5 / Semantic',
+                        'svg' => '<svg class="w-4 h-4 text-[#E34F26] fill-current shrink-0" viewBox="0 0 24 24"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.883-.804-.188-2.097H6.308l.36 4.17 5.332 1.48 5.305-1.48.729-8.169H8.531z"/></svg>',
+                        'border' => 'border-[#E34F26]/35'
+                    ],
+                    [
+                        'name' => 'Git Versiyon Kontrolü',
+                        'svg' => '<svg class="w-4 h-4 text-[#F05032] fill-current shrink-0" viewBox="0 0 24 24"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.529-.527-.667-1.297-.414-1.954L12.79 8.922v6.574c.217.106.417.25.584.417.72.72.72 1.884 0 2.604-.719.719-1.881.719-2.6 0-.721-.72-.721-1.884 0-2.604.223-.223.494-.37.781-.447V8.877c-.287-.077-.558-.224-.781-.447-.539-.538-.672-1.325-.398-1.989L7.65 3.685.454 10.88c-.605.604-.605 1.581 0 2.186l10.481 10.481c.604.604 1.582.604 2.187 0l10.424-10.424c.606-.603.606-1.58 0-2.193z"/></svg>',
+                        'border' => 'border-[#F05032]/35'
+                    ],
+                    [
+                        'name' => 'REST API & Webhooks',
+                        'svg' => '<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">sync_alt</span>',
+                        'border' => 'border-tertiary/30'
+                    ],
+                    [
+                        'name' => 'Sanal POS (Iyzico/PayTR)',
+                        'svg' => '<span class="material-symbols-outlined text-primary" style="font-size: 18px;">credit_card</span>',
+                        'border' => 'border-primary/30'
+                    ],
+                    [
+                        'name' => 'Mobil Öncelikli UI',
+                        'svg' => '<span class="material-symbols-outlined text-secondary" style="font-size: 18px;">smartphone</span>',
+                        'border' => 'border-secondary/30'
+                    ],
+                    [
+                        'name' => 'Google Lighthouse 98+',
+                        'svg' => '<span class="material-symbols-outlined text-tertiary" style="font-size: 18px;">speed</span>',
+                        'border' => 'border-tertiary/30'
+                    ],
+                    [
+                        'name' => 'Nginx & Apache',
+                        'svg' => '<span class="material-symbols-outlined text-[#009639]" style="font-size: 18px;">dns</span>',
+                        'border' => 'border-[#009639]/30'
+                    ],
+                    [
+                        'name' => '256-Bit SSL Şifreleme',
+                        'svg' => '<span class="material-symbols-outlined text-primary" style="font-size: 18px;">verified_user</span>',
+                        'border' => 'border-primary/30'
+                    ],
                 ];
                 for ($loop = 0; $loop < 2; $loop++):
                     foreach ($techBadges as $tech):
                 ?>
                     <div class="flex items-center gap-2.5 px-3.5 py-1.5 rounded-lg bg-surface-container border <?= $tech['border'] ?> whitespace-nowrap shadow-sm hover:scale-105 transition-transform cursor-default">
-                        <span class="material-symbols-outlined <?= $tech['highlight'] ?>" style="font-size: 17px;"><?= $tech['icon'] ?></span>
+                        <?= $tech['svg'] ?>
                         <span class="font-code-sm text-xs font-bold text-on-surface"><?= $tech['name'] ?></span>
                     </div>
                 <?php 
@@ -239,50 +287,60 @@ include __DIR__ . '/includes/header.php';
 
                     <!-- Quick Facts -->
                     <div class="space-y-3 font-code-sm text-xs text-on-surface-variant border-y border-surface-container-high/60 py-5 my-5">
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Eğitim:</span>
-                            <span class="text-on-surface font-semibold text-right">MCBÜ (Mezun) &bull; Anadolu Üniv.</span>
+                            <span class="text-on-surface font-semibold text-left sm:text-right">MCBÜ (Mezun) &bull; Anadolu Üniv.</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Deneyim:</span>
-                            <span class="text-on-surface font-semibold text-right">PixelByte (Web) &bull; Porland Ar-Ge</span>
+                            <span class="text-on-surface font-semibold text-left sm:text-right">PixelByte (Web) &bull; Porland Ar-Ge</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Temel:</span>
-                            <span class="text-on-surface font-semibold text-right">Bilişim Teknolojileri / Web Tasarım</span>
+                            <span class="text-on-surface font-semibold text-left sm:text-right">Bilişim Teknolojileri / Web Tasarım</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Odak Alanı:</span>
-                            <span class="text-on-surface font-semibold text-right">Full-Stack Web &amp; Yapay Zeka</span>
+                            <span class="text-on-surface font-semibold text-left sm:text-right">Full-Stack Web &amp; Yapay Zeka</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Ana Diller:</span>
-                            <span class="text-primary font-semibold text-right">PHP, MySQL, JavaScript, HTML/CSS</span>
+                            <span class="text-primary font-semibold text-left sm:text-right">PHP, MySQL, JavaScript, HTML/CSS</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">Konum:</span>
-                            <span class="text-on-surface font-semibold text-right">Bilecik / Eskişehir &bull; Remote</span>
+                            <span class="text-on-surface font-semibold text-left sm:text-right">Bilecik / Eskişehir &bull; Remote</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                             <span class="text-outline">E-Posta:</span>
-                            <span class="text-tertiary font-semibold text-right"><?= htmlspecialchars($config['contact']['email']) ?></span>
+                            <div class="flex items-center gap-1.5 self-start sm:self-auto">
+                                <a href="mailto:<?= htmlspecialchars($config['contact']['email']) ?>" class="text-tertiary font-semibold hover:underline"><?= htmlspecialchars($config['contact']['email']) ?></a>
+                                <button type="button" data-copy="<?= htmlspecialchars($config['contact']['email']) ?>" title="E-postayı Kopyala" class="p-1 rounded hover:bg-surface-container-high text-outline hover:text-primary transition-colors inline-flex items-center">
+                                    <span class="material-symbols-outlined" style="font-size: 15px;">content_copy</span>
+                                </button>
+                            </div>
                         </div>
                         <?php if (!empty($config['contact']['phone'])): ?>
-                            <div class="flex items-center justify-between">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                                 <span class="text-outline">Telefon:</span>
-                                <a href="tel:<?= preg_replace('/[^0-9+]/', '', $config['contact']['phone']) ?>" class="text-on-surface hover:text-primary font-semibold text-right transition-colors"><?= htmlspecialchars($config['contact']['phone']) ?></a>
+                                <div class="flex items-center gap-1.5 self-start sm:self-auto">
+                                    <a href="tel:<?= preg_replace('/[^0-9+]/', '', $config['contact']['phone']) ?>" class="text-on-surface hover:text-primary font-semibold transition-colors"><?= htmlspecialchars($config['contact']['phone']) ?></a>
+                                    <button type="button" data-copy="<?= preg_replace('/[^0-9+]/', '', $config['contact']['phone']) ?>" title="Numarayı Kopyala" class="p-1 rounded hover:bg-surface-container-high text-outline hover:text-primary transition-colors inline-flex items-center">
+                                        <span class="material-symbols-outlined" style="font-size: 15px;">content_copy</span>
+                                    </button>
+                                </div>
                             </div>
                         <?php endif; ?>
                         <?php if (!empty($config['contact']['github'])): ?>
-                            <div class="flex items-center justify-between">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                                 <span class="text-outline">GitHub:</span>
-                                <a href="<?= htmlspecialchars($config['contact']['github']) ?>" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold text-right">@<?= htmlspecialchars($config['contact']['github_username'] ?? 'sametuzun26') ?></a>
+                                <a href="<?= htmlspecialchars($config['contact']['github']) ?>" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold text-left sm:text-right">@<?= htmlspecialchars($config['contact']['github_username'] ?? 'sametuzun26') ?></a>
                             </div>
                         <?php endif; ?>
                         <?php if (!empty($config['contact']['instagram'])): ?>
-                            <div class="flex items-center justify-between">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-0.5 sm:gap-2">
                                 <span class="text-outline">Instagram:</span>
-                                <a href="<?= htmlspecialchars($config['contact']['instagram']) ?>" target="_blank" rel="noopener noreferrer" class="text-[#E1306C] hover:underline font-semibold text-right">@<?= htmlspecialchars($config['contact']['instagram_username'] ?? 'rsametuzun') ?></a>
+                                <a href="<?= htmlspecialchars($config['contact']['instagram']) ?>" target="_blank" rel="noopener noreferrer" class="text-[#E1306C] hover:underline font-semibold text-left sm:text-right">@<?= htmlspecialchars($config['contact']['instagram_username'] ?? 'rsametuzun') ?></a>
                             </div>
                         <?php endif; ?>
                     </div>
@@ -327,7 +385,7 @@ include __DIR__ . '/includes/header.php';
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <?php foreach ($config['capabilities'] as $cap): ?>
-                    <div class="bg-surface-container rounded-2xl p-6 flex flex-col justify-between group hover:bg-surface-container-high transition-all border border-surface-container-high/50 shadow-sm">
+                    <div class="card-glow-hover bg-surface-container rounded-2xl p-6 flex flex-col justify-between group hover:bg-surface-container-high transition-all border border-surface-container-high/50 shadow-sm">
                         <div>
                             <div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center mb-4 group-hover:bg-primary-container transition-colors">
                                 <span class="material-symbols-outlined text-primary group-hover:text-on-primary-container" style="font-size: 28px;"><?= htmlspecialchars($cap['icon']) ?></span>
@@ -361,15 +419,15 @@ include __DIR__ . '/includes/header.php';
             </p>
         </div>
 
-        <div class="max-w-[800px] mx-auto relative border-l-2 border-surface-container-high/80 pl-6 md:pl-8 ml-4 md:ml-auto space-y-10">
+        <div class="max-w-[800px] mx-auto relative border-l-2 border-surface-container-high/80 pl-4 sm:pl-6 md:pl-8 ml-2.5 sm:ml-4 md:ml-auto space-y-8 sm:space-y-10">
             <?php foreach ($config['journey'] as $item): ?>
                 <div class="relative group">
                     <!-- Marker Dot -->
-                    <div class="absolute -left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-surface border-2 border-primary group-hover:bg-primary transition-colors flex items-center justify-center">
+                    <div class="absolute -left-[25px] sm:-left-[31px] md:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-surface border-2 border-primary group-hover:bg-primary transition-colors flex items-center justify-center">
                         <span class="w-1.5 h-1.5 rounded-full bg-primary group-hover:bg-surface"></span>
                     </div>
 
-                    <div class="bg-surface-container rounded-2xl p-6 border border-surface-container-high/60 shadow-sm hover:border-primary/40 transition-colors">
+                    <div class="card-glow-hover bg-surface-container rounded-2xl p-4 sm:p-6 border border-surface-container-high/60 shadow-sm transition-all">
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                             <span class="px-3 py-1 rounded-full bg-primary/10 text-primary font-code-sm text-xs font-bold">
                                 <?= htmlspecialchars($item['period']) ?>
@@ -420,8 +478,12 @@ include __DIR__ . '/includes/header.php';
 
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <?php foreach ($config['projects'] as $project): ?>
-                    <div class="project-card bg-surface-container rounded-2xl overflow-hidden border border-surface-container-high/60 flex flex-col group hover:border-primary/50 hover:shadow-[0_8px_32px_rgba(6,182,212,0.15)] transition-all duration-300" data-category="<?= htmlspecialchars($project['category']) ?>">
+                <?php foreach ($config['projects'] as $project): 
+                    $projectJson = htmlspecialchars(json_encode($project, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE));
+                ?>
+                    <div class="project-card card-glow-hover bg-surface-container rounded-2xl overflow-hidden border border-surface-container-high/60 flex flex-col group cursor-pointer transition-all duration-300" 
+                         data-category="<?= htmlspecialchars($project['category']) ?>"
+                         onclick="openProjectModal(<?= $projectJson ?>)">
                         
                         <!-- Browser Window Mockup Bar -->
                         <div class="bg-surface-container-lowest/90 px-4 py-2.5 border-b border-surface-container-high flex items-center justify-between gap-3">
@@ -440,25 +502,29 @@ include __DIR__ . '/includes/header.php';
                         </div>
 
                         <!-- Screen Preview -->
-                        <div class="relative h-60 overflow-hidden bg-surface-container-highest">
+                        <div class="relative h-56 sm:h-60 overflow-hidden bg-surface-container-highest">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="<?= htmlspecialchars($project['image']) ?>" alt="<?= htmlspecialchars($project['title']) ?>"/>
-                            <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-30 group-hover:opacity-0 transition-opacity"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-40 group-hover:opacity-10 transition-opacity"></div>
+                            <div class="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/90 backdrop-blur px-2.5 py-1 rounded-md text-[11px] font-code-sm text-primary flex items-center gap-1 border border-primary/30">
+                                <span>İncele</span>
+                                <span class="material-symbols-outlined" style="font-size: 14px;">open_in_full</span>
+                            </div>
                         </div>
-                        <div class="p-6 flex flex-col flex-1 justify-between">
+                        <div class="p-5 sm:p-6 flex flex-col flex-1 justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-2">
-                                    <h3 class="font-headline-md text-lg font-bold text-on-surface"><?= htmlspecialchars($project['title']) ?></h3>
+                                    <h3 class="font-headline-md text-lg font-bold text-on-surface group-hover:text-primary transition-colors"><?= htmlspecialchars($project['title']) ?></h3>
                                     <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_outward</span>
                                 </div>
                                 <p class="font-body-md text-sm text-on-surface-variant mb-4 leading-relaxed">
                                     <?= htmlspecialchars($project['desc']) ?>
                                 </p>
-                                <!-- Metrics Bar -->
-                                <div class="grid grid-cols-3 gap-2 bg-surface-container-low p-3 rounded-lg mb-4 border border-surface-container-high/40">
+                                <!-- Responsive Metrics Bar -->
+                                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 bg-surface-container-low p-2.5 sm:p-3 rounded-lg mb-4 border border-surface-container-high/40">
                                     <?php foreach ($project['metrics'] as $metric): ?>
-                                        <div>
-                                            <span class="font-label-caps text-[10px] text-outline block font-semibold"><?= htmlspecialchars($metric['label']) ?></span>
-                                            <span class="font-code-md text-xs <?= htmlspecialchars($metric['color']) ?> font-bold"><?= htmlspecialchars($metric['val']) ?></span>
+                                        <div class="min-w-0">
+                                            <span class="font-label-caps text-[10px] text-outline block font-semibold truncate"><?= htmlspecialchars($metric['label']) ?></span>
+                                            <span class="font-code-md text-xs <?= htmlspecialchars($metric['color']) ?> font-bold truncate block"><?= htmlspecialchars($metric['val']) ?></span>
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
@@ -473,12 +539,20 @@ include __DIR__ . '/includes/header.php';
                                         </span>
                                     <?php endforeach; ?>
                                 </div>
-                                <a href="#contact-section" 
-                                   onclick="document.getElementById('project-notes').value = 'Merhaba Samet, portfolyondaki \'<?= htmlspecialchars(addslashes($project['title'])) ?>\' projesini inceledim, buna benzer bir çalışma üzerine konuşmak istiyorum.'; document.getElementById('project-notes').focus();" 
-                                   class="inline-flex items-center gap-1 text-primary hover:underline font-code-sm text-xs font-bold">
-                                    <span>Bunu Konuşalım</span>
-                                    <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
-                                </a>
+                                <div class="flex items-center gap-3">
+                                    <button type="button" 
+                                            onclick="event.stopPropagation(); openProjectModal(<?= $projectJson ?>);" 
+                                            class="inline-flex items-center gap-1 text-on-surface-variant hover:text-primary font-code-sm text-xs font-semibold py-1 px-2 rounded hover:bg-surface-container-high transition-colors">
+                                        <span class="material-symbols-outlined" style="font-size: 15px;">visibility</span>
+                                        <span>Case Study</span>
+                                    </button>
+                                    <a href="#contact-section" 
+                                       onclick="event.stopPropagation(); document.getElementById('project-notes').value = 'Merhaba Samet, portfolyondaki \'<?= htmlspecialchars(addslashes($project['title'])) ?>\' projesini inceledim, buna benzer bir çalışma üzerine konuşmak istiyorum.'; document.getElementById('project-notes').focus();" 
+                                       class="inline-flex items-center gap-1 text-primary hover:underline font-code-sm text-xs font-bold">
+                                        <span>Bunu Konuşalım</span>
+                                        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -499,7 +573,7 @@ include __DIR__ . '/includes/header.php';
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             <?php foreach ($config['collaborations'] as $collab): ?>
-                <div class="bg-surface-container-low rounded-2xl p-6 lg:p-8 border border-surface-container-high/60 flex flex-col justify-between hover:border-primary/40 hover:shadow-lg transition-all group">
+                <div class="card-glow-hover bg-surface-container-low rounded-2xl p-6 lg:p-8 border border-surface-container-high/60 flex flex-col justify-between transition-all group">
                     <div>
                         <div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center mb-5 group-hover:bg-primary-container transition-colors">
                             <span class="material-symbols-outlined text-primary group-hover:text-on-primary-container" style="font-size: 26px;"><?= htmlspecialchars($collab['icon']) ?></span>

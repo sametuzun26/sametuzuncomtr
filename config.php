@@ -225,13 +225,16 @@ return [
         ],
     ],
 
-    // Gerçekleşen & Örnek Projeler
+    // Gerçekleşen & Örnek Projeler (Case Studies)
     'projects' => [
         [
+            'id' => 'borsify',
             'title' => 'Borsify — Yapay Zeka Destekli Borsa Asistanı',
             'category' => 'custom',
             'category_label' => 'YAPAY ZEKA / WEB PLATFORMU',
             'desc' => 'PixelByte bünyesinde geliştirilen; finans verilerini yapay zeka modelleriyle işleyip kullanıcıya anlık içgörüler sunan web uygulamasının arka uç (backend) geliştirme ve veri entegrasyonu.',
+            'problem' => 'Yatırımcıların borsa grafiklerinde kaybolması, gecikmeli veriler ve karmaşık teknik analizlerin anlaşılmasının zor olması.',
+            'solution' => 'PHP 8 ve MySQL altyapısıyla Python yapay zeka servislerini REST API üzerinden birbirine bağlayan, <250ms yanıt süreli yüksek hızlı arka uç mimarisi.',
             'image' => 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
             'metrics' => [
                 ['label' => 'YAPAY ZEKA', 'val' => 'AI Modelleri', 'color' => 'text-primary'],
@@ -242,10 +245,13 @@ return [
             'demo_url' => '#',
         ],
         [
+            'id' => 'pixcode',
             'title' => 'Pixcode — Yapay Zeka Kodlama Asistanı',
             'category' => 'custom',
             'category_label' => 'AI DEVELOPER TOOLS',
             'desc' => 'Yazılımcıların kod yazma ve problem çözme süreçlerini hızlandırmak için kurgulanan Pixcode yapay zeka kod asistanında sistem planlama, mimari modelleme ve web test süreçleri.',
+            'problem' => 'Yazılımcıların tekrarlayan kod blokları ve karmaşık algoritma kurgularında çok fazla zaman kaybetmesi ve bağlam kopuklukları.',
+            'solution' => 'Kullanıcı dostu web arayüzü, gelişmiş LLM prompt pipeline mimarisi ve canlı kod çalıştırma test ortamı planlaması.',
             'image' => 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
             'metrics' => [
                 ['label' => 'SİSTEM', 'val' => 'Planlama & Mimari', 'color' => 'text-tertiary'],
@@ -256,10 +262,13 @@ return [
             'demo_url' => '#',
         ],
         [
+            'id' => 'kurumsal',
             'title' => 'Kurumsal Web Sitesi & Dinamik Yönetim Paneli',
             'category' => 'corporate',
             'category_label' => 'FULL-STACK / WEB',
             'desc' => 'Dinamik blog, hizmetler vitrini ve hafif yönetim paneline sahip, <0.6 saniyede açılan modern kurumsal web platformu.',
+            'problem' => 'WordPress şablonlarının hantallığı, sürekli güncelleme gereksinimi ve mobil cihazlarda yavaş açılan sayfalar.',
+            'solution' => 'Sıfırdan temiz PHP 8 ve Tailwind CSS ile kodlanmış, müşterinin kolayca yönetebileceği güvenlikli hafif CMS paneli.',
             'image' => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
             'metrics' => [
                 ['label' => 'YÜKLEME HIZI', 'val' => '0.5 sn', 'color' => 'text-tertiary'],
@@ -270,10 +279,13 @@ return [
             'demo_url' => '#',
         ],
         [
+            'id' => 'eticaret',
             'title' => 'E-Ticaret & Sanal POS Ödeme Entegrasyonu',
             'category' => 'ecommerce',
             'category_label' => 'E-TİCARET',
             'desc' => 'Kullanıcı dostu sepet akışı, 3D Secure kredi kartı ödeme entegrasyonu (Iyzico/PayTR) ve anlık sipariş yönetim altyapısı.',
+            'problem' => 'Karmaşık ödeme adımları yüzünden terk edilen sepetler ve entegrasyon hatalarından kaynaklanan sipariş kayıpları.',
+            'solution' => '3 adımlı sadeleştirilmiş tek sayfa ödeme (one-page checkout), webhook tabanlı anlık sipariş ve SMS bildirim sistemi.',
             'image' => 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=80',
             'metrics' => [
                 ['label' => 'ÖDEME', 'val' => '3D Secure', 'color' => 'text-secondary'],
@@ -293,7 +305,7 @@ return [
         ],
         [
             'q' => 'Uzaktan (Remote) çalışma ve projelere açık mısın?',
-            'a' => 'Evet! İstanbul merkezliyim ancak Türkiye\'nin veya dünyanın her yerinden kişi ve ekiplerle tamamen uzaktan ve düzenli iletişimle çalışıyorum.',
+            'a' => 'Evet! Bilecik ve Eskişehir merkezli olarak Türkiye\'nin ve dünyanın her yerinden kişi ve ekiplerle tamamen uzaktan, şeffaf ve düzenli iletişimle çalışıyorum.',
         ],
         [
             'q' => 'Bir projede birlikte nasıl çalışıyoruz?',
@@ -301,7 +313,7 @@ return [
         ],
         [
             'q' => 'Seninle nasıl iletişime geçebilirim?',
-            'a' => 'Aşağıdaki iletişim formundan, doğrudan e-posta (iletisim@sametuzun.com.tr) adresimden ya da sağ alttaki butondan WhatsApp üzerinden bana istediğiniz zaman yazabilirsiniz.',
+            'a' => 'Aşağıdaki iletişim formundan, doğrudan e-posta (sametuzun2626@gmail.com) adresimden ya da sağ alttaki butondan WhatsApp üzerinden bana istediğiniz zaman yazabilirsiniz.',
         ],
     ],
 
