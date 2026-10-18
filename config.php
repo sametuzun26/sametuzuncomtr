@@ -22,7 +22,7 @@ return [
 
     'profile' => [
         'name' => 'Samet Uzun',
-        'brand' => 'SAMETUZUN.DEV',
+        'brand' => 'Samet Uzun',
         'role' => 'Full-Stack Web Geliştirici & Tasarım Meraklısı',
         'greeting' => 'Merhaba, ben Samet! 👋',
         'headline' => 'Fikirleri yaşayan, hızlı ve keyifli web deneyimlerine dönüştürüyorum.',
@@ -37,7 +37,7 @@ return [
     'about' => [
         'lead' => 'Lise yıllarından bu yana kod yazan, yapay zeka destekli web araçları ve temiz mimarinin kesişiminde çözümler üreten bir geliştiriciyim.',
         'paragraphs' => [
-            "Yazılım ve web dünyasına olan ilgim 2017'de lise yıllarıma ve 2018'de Bilişim Teknolojileri alanında Web Tasarımı dalını seçmemle başladı. Ekrandaki ilk HTML ve CSS kodlarımın canlı bir sayfaya dönüştüğü o ilk andan itibaren, arayüz geliştirmek benim için sıradan bir ders değil, tutkulu bir üretim yolculuğuna dönüştü.",
+            "Yazılım ve web dünyasına olan ilgim, lise yıllarımda Bilişim Teknolojileri alanında Web Tasarımı dalını seçmemle başladı. Ekrandaki ilk HTML ve CSS kodlarımın canlı bir sayfaya dönüştüğü o ilk andan itibaren, arayüz geliştirmek benim için sıradan bir ders değil, tutkulu bir üretim yolculuğuna dönüştü.",
             "Lisede kazandığım web ve arayüz temellerini, Manisa Celal Bayar Üniversitesi Bilgisayar Teknolojileri Bölümü Bilgisayar Programcılığı programında akademik bir seviyeye taşıdım. Ardından Eskişehir PixelByte bünyesinde Web Developer olarak yapay zeka destekli web uygulamalarının (Borsify Borsa Asistanı, Pixcode Kod Asistanı) arka uç geliştirme, sistem planlama ve web optimizasyon süreçlerinde aktif sorumluluk aldım.",
             "Aynı zamanda kurumsal Ar-Ge süreçlerinden gelen teknik veri analizi, kalite kontrol ve sistem takibi disipliniyle kodlama pratiğimi harmanladım. Eğitimime Anadolu Üniversitesi Çalışma Ekonomisi ve Endüstri İlişkileri lisans programıyla devam ederken; modern PHP, MySQL, JavaScript ve Tailwind CSS ekosisteminde kullanıcı dostu, 1 saniyenin altında açılan dinamik web çözümleri geliştiriyorum."
         ],
@@ -96,18 +96,11 @@ return [
             'tags' => ['MCBÜ', 'Bilgisayar Programcılığı', 'SQL / MySQL', 'OOP', 'Web Programlama', 'Algoritmalar']
         ],
         [
-            'period' => '2018 — 2021',
-            'title' => 'Bilişim Teknolojileri — Web Tasarım Dalı',
-            'role' => 'Mesleki Lise Eğitimi & İlk Kodlar (Mezun)',
-            'desc' => 'Lise 2. sınıfta Web Tasarım alanını seçerek ilk HTML, CSS, JavaScript ve dinamik sayfa tasarımlarımla web dünyasına profesyonel adımımı attım ve bölümü başarıyla tamamladım.',
-            'tags' => ['Bilişim Teknolojileri', 'Web Tasarımı', 'HTML5', 'CSS3', 'JavaScript', 'Arayüz']
-        ],
-        [
-            'period' => '2017',
-            'title' => 'Teknoloji Dünyasına İlk Adım & Keşif',
-            'role' => 'Lise Başlangıcı',
-            'desc' => 'Bilgisayar teknolojilerine, internet dünyasına ve kodlamanın arka planında yatan mekanizmalara duyduğum merakla web geliştiriciliğine uzanan yolculuğumun ilk adımlarını attım.',
-            'tags' => ['Teknoloji Merakı', 'Bilgisayar Temelleri', 'İlk Adım']
+            'period' => '2017 — 2021',
+            'title' => 'Bilişim Teknolojileri — Web Tasarımı Dalı',
+            'role' => 'Mesleki Lise Eğitimi (Mezun)',
+            'desc' => 'Lise eğitimi boyunca Bilişim Teknolojileri alanında temel programlama mantığı, veri ve algoritma yapıları ile Web Tasarımı dalında ilk HTML, CSS, JavaScript dinamik arayüz çalışmalarımı gerçekleştirerek yazılıma sağlam bir temel attım.',
+            'tags' => ['Bilişim Teknolojileri', 'Web Tasarımı', 'HTML5 & CSS3', 'JavaScript', 'Temel Algoritmalar']
         ],
     ],
 
@@ -136,7 +129,7 @@ return [
     'contact' => [
         'email' => 'sametuzun2626@gmail.com',
         'phone' => '+90 (530) 975 83 00',
-        'whatsapp' => 'sametuzun26',
+        'whatsapp' => '905309758300',
         'whatsapp_msg' => 'Merhaba Samet! Portfolyo siteni inceledim, seninle tanışmak ve bir proje hakkında konuşmak istiyorum.',
         'github' => 'https://github.com/sametuzun26',
         'github_username' => 'sametuzun26',
@@ -147,13 +140,11 @@ return [
     ],
 
     'nav' => [
-        ['label' => 'Hakkımda', 'href' => '#about-section'],
         ['label' => 'Uzmanlıklar', 'href' => '#capabilities'],
-        ['label' => 'Yolculuğum', 'href' => '#journey-section'],
         ['label' => 'Projeler', 'href' => '#work-section'],
-        ['label' => 'İş Birlikleri', 'href' => '#collaboration-section'],
-        ['label' => 'Felsefem', 'href' => '#philosophy-section'],
-        ['label' => 'İletişim', 'href' => '#contact-section'],
+        ['label' => 'Hakkımda', 'href' => '#about-section'],
+        ['label' => 'Yolculuğum', 'href' => '#journey-section'],
+        ['label' => 'Standartlar', 'href' => '#features-section'],
     ],
 
     // Uzmanlık Alanları
@@ -235,14 +226,14 @@ return [
             'desc' => 'PixelByte bünyesinde geliştirilen; finans verilerini yapay zeka modelleriyle işleyip kullanıcıya anlık içgörüler sunan web uygulamasının arka uç (backend) geliştirme ve veri entegrasyonu.',
             'problem' => 'Yatırımcıların borsa grafiklerinde kaybolması, gecikmeli veriler ve karmaşık teknik analizlerin anlaşılmasının zor olması.',
             'solution' => 'PHP 8 ve MySQL altyapısıyla Python yapay zeka servislerini REST API üzerinden birbirine bağlayan, <250ms yanıt süreli yüksek hızlı arka uç mimarisi.',
-            'image' => 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+            'image' => 'assets/projects/borsify.jpg',
             'metrics' => [
                 ['label' => 'YAPAY ZEKA', 'val' => 'AI Modelleri', 'color' => 'text-primary'],
                 ['label' => 'MİMARİ', 'val' => 'Backend & API', 'color' => 'text-tertiary'],
                 ['label' => 'VERİ AKIŞI', 'val' => 'Anlık Analiz', 'color' => 'text-secondary'],
             ],
             'tags' => ['PixelByte', 'Yapay Zeka (AI)', 'Backend', 'REST API', 'Veri Analizi', 'MySQL'],
-            'demo_url' => '#',
+            'demo_url' => 'https://borsify.com',
         ],
         [
             'id' => 'pixcode',
@@ -252,14 +243,14 @@ return [
             'desc' => 'Yazılımcıların kod yazma ve problem çözme süreçlerini hızlandırmak için kurgulanan Pixcode yapay zeka kod asistanında sistem planlama, mimari modelleme ve web test süreçleri.',
             'problem' => 'Yazılımcıların tekrarlayan kod blokları ve karmaşık algoritma kurgularında çok fazla zaman kaybetmesi ve bağlam kopuklukları.',
             'solution' => 'Kullanıcı dostu web arayüzü, gelişmiş LLM prompt pipeline mimarisi ve canlı kod çalıştırma test ortamı planlaması.',
-            'image' => 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+            'image' => 'assets/projects/pixcode.jpg',
             'metrics' => [
                 ['label' => 'SİSTEM', 'val' => 'Planlama & Mimari', 'color' => 'text-tertiary'],
                 ['label' => 'GELİŞTİRME', 'val' => 'Web Tabanlı', 'color' => 'text-primary'],
                 ['label' => 'TEST SÜRECİ', 'val' => 'İyileştirme', 'color' => 'text-on-surface'],
             ],
             'tags' => ['PixelByte', 'Pixcode', 'AI Kod Asistanı', 'Sistem Planlama', 'Web Geliştirme'],
-            'demo_url' => '#',
+            'demo_url' => '',
         ],
         [
             'id' => 'kurumsal',
@@ -269,14 +260,14 @@ return [
             'desc' => 'Dinamik blog, hizmetler vitrini ve hafif yönetim paneline sahip, <0.6 saniyede açılan modern kurumsal web platformu.',
             'problem' => 'WordPress şablonlarının hantallığı, sürekli güncelleme gereksinimi ve mobil cihazlarda yavaş açılan sayfalar.',
             'solution' => 'Sıfırdan temiz PHP 8 ve Tailwind CSS ile kodlanmış, müşterinin kolayca yönetebileceği güvenlikli hafif CMS paneli.',
-            'image' => 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+            'image' => 'assets/projects/kurumsal.jpg',
             'metrics' => [
                 ['label' => 'YÜKLEME HIZI', 'val' => '0.5 sn', 'color' => 'text-tertiary'],
                 ['label' => 'PAGESPEED', 'val' => '99/100', 'color' => 'text-primary'],
                 ['label' => 'MOBİL UYUM', 'val' => '%100 Uyumlu', 'color' => 'text-on-surface'],
             ],
             'tags' => ['PHP 8', 'MySQL', 'Tailwind CSS', 'Admin Panel', 'SEO 98+'],
-            'demo_url' => '#',
+            'demo_url' => '',
         ],
         [
             'id' => 'eticaret',
@@ -286,14 +277,14 @@ return [
             'desc' => 'Kullanıcı dostu sepet akışı, 3D Secure kredi kartı ödeme entegrasyonu (Iyzico/PayTR) ve anlık sipariş yönetim altyapısı.',
             'problem' => 'Karmaşık ödeme adımları yüzünden terk edilen sepetler ve entegrasyon hatalarından kaynaklanan sipariş kayıpları.',
             'solution' => '3 adımlı sadeleştirilmiş tek sayfa ödeme (one-page checkout), webhook tabanlı anlık sipariş ve SMS bildirim sistemi.',
-            'image' => 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=800&q=80',
+            'image' => 'assets/projects/eticaret.jpg',
             'metrics' => [
                 ['label' => 'ÖDEME', 'val' => '3D Secure', 'color' => 'text-secondary'],
                 ['label' => 'MOBİL ALIŞVERİŞ', 'val' => 'Tek Tıkla', 'color' => 'text-tertiary'],
                 ['label' => 'GÜVENLİK', 'val' => '256-Bit SSL', 'color' => 'text-on-surface'],
             ],
             'tags' => ['PHP 8', 'Sanal POS', 'JavaScript', 'MySQL', 'Responsive UI'],
-            'demo_url' => '#',
+            'demo_url' => '',
         ],
     ],
 
@@ -317,31 +308,6 @@ return [
         ],
     ],
 
-    // Referanslar & Yorumlar
-    'testimonials' => [
-        [
-            'quote' => 'Samet ile çalışmak çok keyifliydi. Hem isteklerimizi sabırla dinledi hem de sitemizi tam istediğimiz gibi modern ve hızlı bir şekilde teslim etti.',
-            'author' => 'Burak Demir',
-            'title' => 'Firma Sahibi, Mimarlık & Tasarım',
-            'initials' => 'BD',
-            'tag' => 'Kurumsal Web Sitesi',
-            'color' => 'primary',
-        ],
-        [
-            'quote' => 'İletişimi çok kuvvetli ve işine gerçekten özen gösteren bir yazılımcı. Kod bilgisi olmayan birinin bile rahatça anlayacağı şekilde her şeyi açıkladı.',
-            'author' => 'Ayşe Kaya',
-            'title' => 'Proje Yöneticisi',
-            'initials' => 'AK',
-            'tag' => 'E-Ticaret & Arayüz',
-            'color' => 'tertiary',
-        ],
-        [
-            'quote' => 'Yönetim paneli tam ihtiyacımıza göre oldu. Kafamıza takılan her konuda hızlıca destek verdi, kesinlikle tavsiye ediyorum.',
-            'author' => 'Cem Yıldırım',
-            'title' => 'Danışmanlık',
-            'initials' => 'CY',
-            'tag' => 'Özel Web Yazılımı',
-            'color' => 'secondary',
-        ],
-    ],
+    // Referanslar & Yorumlar (İleride gerçek referanslar alındığında eklenebilir)
+    'testimonials' => [],
 ];

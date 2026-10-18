@@ -1,27 +1,27 @@
 <?php
 /**
- * Footer Bileşeni — Sendit Teması
+ * Footer Bileşeni — Gradia Creative Agency Teması
  * @var array $config
  */
 ?>
 </main>
 
-<!-- Sendit Dark Modern Footer -->
-<footer class="w-full bg-slate-950 text-slate-300 border-t border-slate-900 mt-auto" id="footer">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
+<!-- Gradia Deep Modern Agency Footer -->
+<footer class="relative z-20 w-full bg-[#171924] text-slate-300 border-t border-slate-800/80 mt-auto" id="footer">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
             
             <!-- Brand & Status -->
             <div class="space-y-4 lg:col-span-1">
-                <a class="flex items-center gap-3 group" href="#">
-                    <div class="w-10 h-10 rounded-2xl bg-primary text-white flex items-center justify-center font-bold shadow-md shadow-primary/30 group-hover:bg-white group-hover:text-slate-950 transition-colors">
-                        <span class="font-code text-sm">&lt;/&gt;</span>
+                <a class="flex items-center gap-2.5 group" href="#">
+                    <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-primary-dark text-white flex items-center justify-center font-bold shadow-md shadow-primary/30 group-hover:scale-105 transition-transform">
+                        <span class="font-code text-xs">&lt;/&gt;</span>
                     </div>
                     <span class="font-bold text-white text-lg tracking-tight">
                         <?= htmlspecialchars($config['profile']['brand']) ?>
                     </span>
                 </a>
-                <p class="text-sm text-slate-400 leading-relaxed">
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
                     Kullanıcı dostu, 1 saniyenin altında açılan yüksek performanslı ve modern web deneyimleri inşa ediyorum.
                 </p>
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
@@ -32,8 +32,8 @@
 
             <!-- Quick Navigation -->
             <div>
-                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Navigasyon</h4>
-                <ul class="space-y-2.5 text-sm text-slate-400">
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navigasyon</h4>
+                <ul class="space-y-2.5 text-xs sm:text-sm text-slate-400">
                     <?php foreach ($config['nav'] as $item): ?>
                         <li>
                             <a class="hover:text-primary transition-colors inline-block" href="<?= htmlspecialchars($item['href']) ?>">
@@ -46,8 +46,8 @@
 
             <!-- Contact & Socials -->
             <div>
-                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Bağlantılar</h4>
-                <ul class="space-y-3 text-sm">
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Bağlantılar</h4>
+                <ul class="space-y-3 text-xs sm:text-sm">
                     <?php if (!empty($config['contact']['github'])): ?>
                         <li>
                             <a class="text-slate-400 hover:text-white transition-colors flex items-center gap-2" href="<?= htmlspecialchars($config['contact']['github']) ?>" target="_blank" rel="noopener noreferrer">
@@ -87,12 +87,12 @@
             </div>
 
             <!-- Fast Action Card -->
-            <div class="p-6 rounded-3xl bg-slate-900 border border-slate-800 space-y-4">
+            <div class="p-6 rounded-[28px] bg-[#242734] border border-slate-700/60 space-y-3.5">
                 <span class="text-xs font-bold uppercase tracking-wider text-primary">Doğrudan İletişim</span>
                 <p class="text-xs text-slate-400 leading-relaxed">
-                    Aklınızda bir web fikri mi var? Hemen WhatsApp veya e-posta üzerinden yazın, projenizi birlikte planlayalım.
+                    Aklınızda bir web fikri mi var? Hemen WhatsApp veya form üzerinden yazın, projenizi birlikte planlayalım.
                 </p>
-                <a href="#contact-section" class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-primary hover:bg-white hover:text-slate-950 text-white text-xs font-bold transition-all shadow-md shadow-primary/20">
+                <a href="#contact-section" class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white text-xs font-bold transition-all shadow-md shadow-primary/20">
                     <span>Teklif Alın &bull; İletişime Geçin</span>
                 </a>
             </div>
@@ -105,13 +105,13 @@
                 &copy; <?= date('Y') ?> <?= htmlspecialchars($config['profile']['name']) ?>. Tüm hakları saklıdır.
             </p>
             <p class="flex items-center gap-2">
-                <span>PHP 8 &bull; Tailwind CSS &bull; Sendit Minimalist Mimari</span>
+                <span>PHP 8 &bull; Tailwind CSS &bull; Gradia Agency Mimari</span>
             </p>
         </div>
     </div>
 </footer>
 
-<!-- Floating WhatsApp Button (Desktop) -->
+<!-- Floating WhatsApp Button (Gradia Pill Style) -->
 <?php if (!empty($config['contact']['whatsapp'])): ?>
 <?php 
     $waTarget = ltrim($config['contact']['whatsapp'], '@');
@@ -123,75 +123,75 @@
 <a href="<?= htmlspecialchars($waUrl) ?>" 
    target="_blank" 
    rel="noopener noreferrer" 
-   class="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 py-3 rounded-2xl shadow-xl shadow-[#25D366]/30 hover:scale-105 active:scale-95 transition-all group font-bold text-sm"
-   title="WhatsApp'tan Hızlı Mesaj Gönder (@<?= htmlspecialchars($waTarget) ?>)">
-    <span class="relative flex h-3 w-3">
+   class="hidden sm:flex fixed bottom-6 right-6 z-40 items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 py-3 rounded-full shadow-xl shadow-[#25D366]/30 hover:scale-105 active:scale-95 transition-all group font-bold text-sm"
+   title="WhatsApp'tan Hızlı Mesaj Gönder">
+    <span class="relative flex h-2.5 w-2.5">
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
     </span>
-    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
     <span>WhatsApp İletişim</span>
 </a>
 
-<!-- Mobile Bottom Floating Action Dock (Sadece Mobilde Görünür) -->
-<div class="sm:hidden fixed bottom-3 left-3 right-3 z-40 bg-white/95 backdrop-blur-xl border border-gray-200/80 rounded-2xl p-2 px-4 flex items-center justify-around shadow-2xl">
-    <a href="#work-section" class="flex flex-col items-center gap-1 text-gray-600 hover:text-primary active:scale-95 transition-all">
-        <span class="material-symbols-outlined" style="font-size: 20px;">rocket_launch</span>
-        <span class="text-[10px] font-bold">Projeler</span>
+<!-- Mobile Bottom Floating Action Dock (Gradia Glass Pill) -->
+<div class="sm:hidden fixed bottom-3 left-3 right-3 z-40 bg-white/90 backdrop-blur-xl border border-purple-100 rounded-full p-2 px-5 flex items-center justify-around shadow-2xl">
+    <a href="#work-section" class="flex flex-col items-center gap-0.5 text-muted hover:text-primary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span>
+        <span class="text-[9px] font-bold">Projeler</span>
     </a>
     <?php if (!empty($config['profile']['cv_url'])): ?>
-    <a href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" target="_blank" class="flex flex-col items-center gap-1 text-gray-600 hover:text-primary active:scale-95 transition-all">
-        <span class="material-symbols-outlined" style="font-size: 20px;">description</span>
-        <span class="text-[10px] font-bold">CV İndir</span>
+    <a href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" target="_blank" class="flex flex-col items-center gap-0.5 text-muted hover:text-primary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 18px;">description</span>
+        <span class="text-[9px] font-bold">CV İndir</span>
     </a>
     <?php endif; ?>
-    <a href="<?= htmlspecialchars($waUrl) ?>" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-0.5 py-1.5 px-4 bg-[#25D366] text-white rounded-xl shadow-md active:scale-95 transition-transform">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+    <a href="<?= htmlspecialchars($waUrl) ?>" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-0.5 py-1 px-3.5 bg-[#25D366] text-white rounded-full shadow-md active:scale-95 transition-transform">
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
         </svg>
-        <span class="text-[10px] font-bold">WhatsApp</span>
+        <span class="text-[9px] font-bold">WhatsApp</span>
     </a>
-    <a href="#contact-section" class="flex flex-col items-center gap-1 text-gray-600 hover:text-primary active:scale-95 transition-all">
-        <span class="material-symbols-outlined" style="font-size: 20px;">chat</span>
-        <span class="text-[10px] font-bold">İletişim</span>
+    <a href="#contact-section" class="flex flex-col items-center gap-0.5 text-muted hover:text-primary active:scale-95 transition-all">
+        <span class="material-symbols-outlined" style="font-size: 18px;">chat</span>
+        <span class="text-[9px] font-bold">İletişim</span>
     </a>
 </div>
 <?php endif; ?>
 
-<!-- Interactive Project Case Study Lightbox / Modal (Sendit White Style) -->
-<div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md transition-opacity duration-300">
-    <div class="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-3xl border border-gray-100 shadow-2xl overflow-y-auto flex flex-col text-gray-900">
+<!-- Interactive Project Case Study Lightbox / Modal (Gradia Style) -->
+<div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-secondary/80 backdrop-blur-md transition-opacity duration-300">
+    <div class="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-[32px] border border-purple-100 shadow-2xl overflow-y-auto flex flex-col text-secondary">
         <!-- Modal Header -->
-        <div class="sticky top-0 z-10 bg-white/95 backdrop-blur-md px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+        <div class="sticky top-0 z-10 bg-white/95 backdrop-blur-md px-6 py-4 border-b border-purple-50 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
                 <span id="modal-category" class="text-xs font-bold text-primary uppercase tracking-wider">CASE STUDY</span>
             </div>
-            <button id="close-modal-btn" class="p-2 rounded-xl bg-gray-100 text-gray-500 hover:text-gray-900 hover:bg-gray-200 transition-colors" aria-label="Kapat">
+            <button id="close-modal-btn" class="p-2 rounded-full bg-primary-tint text-muted hover:text-secondary hover:bg-purple-100 transition-colors" aria-label="Kapat">
                 <span class="material-symbols-outlined" style="font-size: 20px;">close</span>
             </button>
         </div>
         <!-- Modal Body -->
         <div class="p-6 space-y-6">
-            <div class="rounded-2xl overflow-hidden h-52 sm:h-72 bg-gray-100 border border-gray-100 relative shadow-inner">
+            <div class="rounded-[24px] overflow-hidden h-52 sm:h-72 bg-slate-900 border border-purple-100 relative shadow-inner">
                 <img id="modal-image" src="" alt="Proje Önizleme" class="w-full h-full object-cover"/>
             </div>
             <div>
-                <h3 id="modal-title" class="text-2xl font-bold text-gray-900"></h3>
-                <p id="modal-desc" class="text-sm text-gray-600 mt-2 leading-relaxed"></p>
+                <h3 id="modal-title" class="text-2xl font-bold text-secondary"></h3>
+                <p id="modal-desc" class="text-sm text-muted mt-2 leading-relaxed"></p>
             </div>
             <!-- Problem & Solution Block -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-5 rounded-2xl bg-rose-50/60 border border-rose-100">
+                <div class="p-5 rounded-[22px] bg-rose-50/70 border border-rose-100">
                     <span class="text-xs text-rose-700 font-bold flex items-center gap-1.5 mb-2 uppercase tracking-wide">
                         <span class="material-symbols-outlined" style="font-size: 16px;">crisis_alert</span>
                         <span>Çözülen Problem</span>
                     </span>
                     <p id="modal-problem" class="text-xs text-rose-950/80 leading-relaxed"></p>
                 </div>
-                <div class="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-100">
+                <div class="p-5 rounded-[22px] bg-emerald-50/70 border border-emerald-100">
                     <span class="text-xs text-emerald-700 font-bold flex items-center gap-1.5 mb-2 uppercase tracking-wide">
                         <span class="material-symbols-outlined" style="font-size: 16px;">verified</span>
                         <span>Uygulanan Çözüm</span>
@@ -200,20 +200,24 @@
                 </div>
             </div>
             <!-- Architecture & Metrics -->
-            <div class="p-5 rounded-2xl bg-gray-50 border border-gray-100">
-                <span class="text-xs text-gray-500 uppercase font-bold tracking-wider block mb-3">MİMARİ &amp; TEKNOLOJİLER</span>
+            <div class="p-5 rounded-[22px] bg-[#faf9ff] border border-purple-100">
+                <span class="text-xs text-muted uppercase font-bold tracking-wider block mb-3">MİMARİ &amp; TEKNOLOJİLER</span>
                 <div id="modal-tags" class="flex flex-wrap gap-2 mb-4"></div>
-                <div id="modal-metrics" class="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-3 border-t border-gray-200/60"></div>
+                <div id="modal-metrics" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 pt-3 border-t border-purple-100/70"></div>
             </div>
         </div>
         <!-- Modal Footer -->
-        <div class="sticky bottom-0 bg-white/95 backdrop-blur-md px-6 py-4 border-t border-gray-100 flex items-center justify-between gap-3">
-            <span class="text-xs text-gray-500 hidden sm:inline">Projeyi beğendiniz mi?</span>
-            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
-                <button type="button" id="close-modal-bottom-btn" class="px-5 py-2.5 rounded-xl bg-gray-100 text-gray-700 hover:bg-gray-200 text-xs font-bold transition-colors">
+        <div class="sticky bottom-0 bg-white/95 backdrop-blur-md px-6 py-4 border-t border-purple-50 flex items-center justify-between gap-3">
+            <span class="text-xs text-muted hidden sm:inline">Projeyi beğendiniz mi?</span>
+            <div class="flex items-center gap-2.5 w-full sm:w-auto justify-end">
+                <a id="modal-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="hidden px-5 py-2.5 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-200 transition-all items-center gap-1.5">
+                    <span>Siteye Git</span>
+                    <span class="material-symbols-outlined text-emerald-600" style="font-size: 14px;">arrow_outward</span>
+                </a>
+                <button type="button" id="close-modal-bottom-btn" class="px-5 py-2.5 rounded-full bg-primary-tint text-secondary hover:bg-purple-100 text-xs font-bold transition-colors">
                     Kapat
                 </button>
-                <a id="modal-action-btn" href="#contact-section" class="px-5 py-2.5 rounded-xl bg-primary hover:bg-secondary text-white text-xs font-bold transition-all shadow-md shadow-primary/20">
+                <a id="modal-action-btn" href="#contact-section" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white text-xs font-bold transition-all shadow-md shadow-primary/20">
                     Buna Benzer Proje Konuşalım &rarr;
                 </a>
             </div>
@@ -232,10 +236,10 @@
         if (!toast) {
             toast = document.createElement('div');
             toast.id = 'global-toast';
-            toast.className = 'fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 px-5 py-3 rounded-2xl bg-slate-900 border border-slate-800 text-white text-sm font-medium shadow-2xl flex items-center gap-3 transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none';
+            toast.className = 'fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 px-5 py-3 rounded-full bg-[#171924] border border-slate-700 text-white text-xs sm:text-sm font-medium shadow-2xl flex items-center gap-2.5 transform translate-y-12 opacity-0 transition-all duration-300 pointer-events-none';
             document.body.appendChild(toast);
         }
-        toast.innerHTML = `<span class="material-symbols-outlined text-primary" style="font-size: 20px;">check_circle</span><span>${msg}</span>`;
+        toast.innerHTML = `<span class="material-symbols-outlined text-primary" style="font-size: 18px;">check_circle</span><span>${msg}</span>`;
         toast.classList.remove('translate-y-12', 'opacity-0');
         toast.classList.add('translate-y-0', 'opacity-100');
         clearTimeout(window._toastTimeout);
@@ -272,22 +276,22 @@
             const isHidden = mobileMenu.classList.contains('hidden');
             if (isHidden) {
                 mobileMenu.classList.remove('hidden');
-                mobileIcon.textContent = 'close';
+                if (mobileIcon) mobileIcon.textContent = 'close';
             } else {
                 mobileMenu.classList.add('hidden');
-                mobileIcon.textContent = 'menu';
+                if (mobileIcon) mobileIcon.textContent = 'menu';
             }
         });
 
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
-                mobileIcon.textContent = 'menu';
+                if (mobileIcon) mobileIcon.textContent = 'menu';
             });
         });
     }
 
-    // 2. Tab Filter Interaction for Projects
+    // 2. Tab Filter Interaction for Projects (Pill Style)
     const filterButtons = document.querySelectorAll('.filter-tab');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -295,11 +299,11 @@
         filterButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterButtons.forEach(b => {
-                    b.classList.remove('bg-primary', 'text-white', 'shadow-md');
-                    b.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                    b.classList.remove('bg-primary', 'text-white', 'shadow-md', 'shadow-primary/20');
+                    b.classList.add('bg-white', 'text-muted', 'hover:text-primary', 'hover:bg-primary-tint', 'border', 'border-purple-100');
                 });
-                btn.classList.add('bg-primary', 'text-white', 'shadow-md');
-                btn.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+                btn.classList.add('bg-primary', 'text-white', 'shadow-md', 'shadow-primary/20');
+                btn.classList.remove('bg-white', 'text-muted', 'hover:text-primary', 'hover:bg-primary-tint');
 
                 const filterVal = btn.getAttribute('data-filter');
 
@@ -343,7 +347,7 @@
             e.preventDefault();
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin" style="font-size: 18px;">progress_activity</span> Gönderiliyor...';
+                submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin" style="font-size: 16px;">progress_activity</span> Gönderiliyor...';
             }
 
             const formData = new FormData(contactForm);
@@ -357,32 +361,32 @@
 
                 feedbackBox.classList.remove('hidden');
                 if (result.success) {
-                    feedbackBox.className = 'p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3 text-sm';
+                    feedbackBox.className = 'p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-2.5 text-xs sm:text-sm font-medium';
                     feedbackText.innerHTML = result.message || 'Mesajınız başarıyla iletildi!';
                     contactForm.reset();
 
-                    // Sendit Celebration Confetti
+                    // Gradia Celebration Confetti
                     if (typeof confetti === 'function') {
                         confetti({
-                            particleCount: 100,
-                            spread: 80,
+                            particleCount: 110,
+                            spread: 85,
                             origin: { y: 0.6 },
-                            colors: ['#6366f1', '#06b6d4', '#10b981', '#f59e0b', '#0f172a']
+                            colors: ['#8b59ff', '#5921b2', '#e2ff3b', '#c14ef3', '#171924']
                         });
                     }
                     showToast('Mesajınız başarıyla iletildi! 🎉');
                 } else {
-                    feedbackBox.className = 'p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-3 text-sm';
+                    feedbackBox.className = 'p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-2.5 text-xs sm:text-sm font-medium';
                     feedbackText.innerHTML = result.message || 'Bir hata oluştu. Lütfen tekrar deneyin.';
                 }
             } catch (err) {
                 feedbackBox.classList.remove('hidden');
-                feedbackBox.className = 'p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-3 text-sm';
+                feedbackBox.className = 'p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-2.5 text-xs sm:text-sm font-medium';
                 feedbackText.innerHTML = 'Sunucuya bağlanılamadı. Lütfen doğrudan e-posta ile iletişime geçin.';
             } finally {
                 if (submitBtn) {
                     submitBtn.disabled = false;
-                    submitBtn.innerHTML = '<span>Teklif &amp; İletişim İsteği Gönder</span><span class="material-symbols-outlined" style="font-size: 18px;">send</span>';
+                    submitBtn.innerHTML = '<span>Mesajı Gönder</span><span class="material-symbols-outlined" style="font-size: 16px;">send</span>';
                 }
             }
         });
@@ -432,11 +436,11 @@
         modalSolution.textContent = data.solution || 'Temiz PHP mimarisi, optimize edilmiş MySQL sorguları ve responsive Tailwind CSS arayüzü ile yüksek performanslı çözüm.';
         modalImage.src = data.image;
 
-        // Tags
+        // Tags in Pill Badges
         modalTags.innerHTML = '';
         (data.tags || []).forEach(tag => {
             const span = document.createElement('span');
-            span.className = 'px-3 py-1 rounded-xl bg-primary/10 text-primary text-xs font-bold';
+            span.className = 'px-3 py-1 rounded-full bg-primary-tint text-primary text-xs font-bold border border-purple-100/60';
             span.textContent = tag;
             modalTags.appendChild(span);
         });
@@ -445,10 +449,23 @@
         modalMetrics.innerHTML = '';
         (data.metrics || []).forEach(m => {
             const div = document.createElement('div');
-            div.className = 'p-3 rounded-xl bg-white border border-gray-100 shadow-sm';
-            div.innerHTML = `<span class="text-[10px] text-gray-500 uppercase block font-bold">${m.label}</span><span class="text-xs font-bold text-gray-900">${m.val}</span>`;
+            div.className = 'p-3 rounded-2xl bg-white border border-purple-100 shadow-sm';
+            div.innerHTML = `<span class="text-[10px] text-muted uppercase block font-bold">${m.label}</span><span class="text-xs font-bold text-secondary mt-0.5">${m.val}</span>`;
             modalMetrics.appendChild(div);
         });
+
+        // Live website button
+        const modalLiveBtn = document.getElementById('modal-live-btn');
+        if (modalLiveBtn) {
+            if (data.demo_url && data.demo_url.trim() !== '' && data.demo_url !== '#') {
+                modalLiveBtn.href = data.demo_url;
+                modalLiveBtn.classList.remove('hidden');
+                modalLiveBtn.classList.add('inline-flex');
+            } else {
+                modalLiveBtn.classList.add('hidden');
+                modalLiveBtn.classList.remove('inline-flex');
+            }
+        }
 
         // Contact action pre-fill
         if (modalActionBtn) {
