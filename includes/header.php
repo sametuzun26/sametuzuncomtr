@@ -5,7 +5,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html class="scroll-smooth overflow-x-hidden" lang="<?= htmlspecialchars($config['site']['lang']) ?>">
+<html class="scroll-smooth" lang="<?= htmlspecialchars($config['site']['lang']) ?>">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
@@ -38,7 +38,6 @@
     <style>
         @layer base {
             html, body { margin: 0; padding: 0; }
-            body { overscroll-behavior: none; }
         }
 
         /* Gradia Custom Scrollbar */
@@ -190,7 +189,7 @@
         };
     </script>
 </head>
-<body class="bg-[#faf9ff] font-sans text-secondary antialiased min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-primary/20 selection:text-primary">
+<body class="bg-[#faf9ff] font-sans text-secondary antialiased min-h-screen flex flex-col justify-between selection:bg-primary/20 selection:text-primary">
 
 <!-- Floating Glass Pill Navbar (Gradia Signature) -->
 <header class="fixed top-3 sm:top-6 inset-x-0 z-50 px-3 sm:px-6 pointer-events-none">
@@ -257,7 +256,7 @@
     </div>
 </header>
 
-<main class="w-full max-w-full pt-28 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate overflow-hidden bg-[#faf9ff]">
+<main class="w-full max-w-full pt-28 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate bg-[#faf9ff]">
 
     <!-- Main Content Background: Signature Pinstripe & Pastel Auras -->
     <div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true" style="contain: paint;">

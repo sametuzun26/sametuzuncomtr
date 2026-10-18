@@ -3,7 +3,7 @@ $config = require_once __DIR__ . '/config.php';
 include __DIR__ . '/includes/header.php';
 ?>
 
-<div class="flex flex-col w-full overflow-hidden">
+<div class="flex flex-col w-full">
 
     <!-- 1. HERO SECTION (Gradia Centered Studio Hero with Signature Background & 3D Badges) -->
     <section class="relative isolate pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden">

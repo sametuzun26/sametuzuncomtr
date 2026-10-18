@@ -121,12 +121,12 @@
     }
 ?>
 <!-- Floating WhatsApp Widget (Pop-up Speech Bubble + Action Button) -->
-<div class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 flex flex-col items-end gap-2 pointer-events-auto">
+<div class="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-40 flex flex-col items-end gap-2 pointer-events-none">
     <!-- Pop-up Speech Bubble -->
     <a href="<?= htmlspecialchars($waUrl) ?>" 
        target="_blank" 
        rel="noopener noreferrer" 
-       class="animate-bounce-subtle inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-purple-100 shadow-[0_8px_20px_rgba(37,211,102,0.18)] hover:border-emerald-300 hover:scale-105 active:scale-95 transition-all text-secondary">
+       class="animate-bounce-subtle pointer-events-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-purple-100 shadow-[0_8px_20px_rgba(37,211,102,0.18)] hover:border-emerald-300 hover:scale-105 active:scale-95 transition-all text-secondary">
         <span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
         <span class="text-[11px] font-bold">Hızlı İletişim 👋</span>
     </a>
@@ -135,7 +135,7 @@
     <a href="<?= htmlspecialchars($waUrl) ?>" 
        target="_blank" 
        rel="noopener noreferrer" 
-       class="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 sm:px-5 sm:py-3 rounded-full shadow-2xl shadow-[#25D366]/40 hover:scale-105 active:scale-95 transition-all group font-bold text-sm"
+       class="pointer-events-auto flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 sm:px-5 sm:py-3 rounded-full shadow-2xl shadow-[#25D366]/40 hover:scale-105 active:scale-95 transition-all group font-bold text-sm"
        title="WhatsApp'tan Hızlı Mesaj Gönder">
         <span class="relative flex h-2.5 w-2.5">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
@@ -170,7 +170,7 @@
 <?php endif; ?>
 
 <!-- Interactive Project Case Study Lightbox / Modal (Gradia Style) -->
-<div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-secondary/80 backdrop-blur-md transition-opacity duration-300">
+<div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-secondary/80 backdrop-blur-md transition-opacity duration-300">
     <div class="relative w-full max-w-2xl max-h-[90vh] bg-white rounded-[32px] border border-purple-100 shadow-2xl overflow-y-auto flex flex-col text-secondary">
         <!-- Modal Header -->
         <div class="sticky top-0 z-10 bg-white/95 backdrop-blur-md px-6 py-4 border-b border-purple-50 flex items-center justify-between">
@@ -480,6 +480,7 @@
         if (modalActionBtn) {
             modalActionBtn.onclick = function() {
                 projectModal.classList.add('hidden');
+                projectModal.classList.remove('flex');
                 document.body.style.overflow = '';
                 const notes = document.getElementById('project-notes');
                 if (notes) {
@@ -490,12 +491,14 @@
         }
 
         projectModal.classList.remove('hidden');
+        projectModal.classList.add('flex');
         document.body.style.overflow = 'hidden';
     };
 
     function closeProjectModal() {
         if (projectModal) {
             projectModal.classList.add('hidden');
+            projectModal.classList.remove('flex');
             document.body.style.overflow = '';
         }
     }
