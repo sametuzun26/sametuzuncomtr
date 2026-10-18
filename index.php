@@ -56,9 +56,9 @@ include __DIR__ . '/includes/header.php';
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
             
             <!-- Centered Pill Badge (Gradia Signature Style) -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fcf5ff] border border-purple-200/70 shadow-[inset_0px_0px_6px_0px_rgba(193,78,243,0.3)] backdrop-blur-md mb-6">
-                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                <span class="text-xs font-bold text-[#791d9c] tracking-wide uppercase"><?= htmlspecialchars($config['profile']['role']) ?></span>
+            <div class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#fcf5ff] border border-purple-200/70 shadow-[inset_0px_0px_6px_0px_rgba(193,78,243,0.3)] backdrop-blur-md mb-6 max-w-full">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
+                <span class="text-[10px] sm:text-xs font-bold text-[#791d9c] tracking-wide uppercase text-center leading-tight"><?= htmlspecialchars($config['profile']['role']) ?></span>
             </div>
 
             <!-- Centered Main Headline -->
@@ -91,20 +91,20 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <!-- Trust & Academic Credentials Strip -->
-            <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-10 pt-6 border-t border-purple-100/80 text-xs font-semibold text-muted">
-                <div class="flex items-center gap-1.5">
+            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-6 mt-10 pt-6 border-t border-purple-100/80 text-[11px] sm:text-xs font-semibold text-muted">
+                <div class="flex items-center gap-1.5 shrink-0">
                     <span class="material-symbols-outlined text-primary" style="font-size: 16px;">school</span>
                     <span>MCBÜ Mezun &bull; Anadolu Üniv.</span>
                 </div>
-                <div class="flex items-center gap-1.5">
+                <div class="flex items-center gap-1.5 shrink-0">
                     <span class="material-symbols-outlined text-primary" style="font-size: 16px;">psychology</span>
                     <span>PixelByte (Borsify &bull; Pixcode AI)</span>
                 </div>
-                <div class="flex items-center gap-1.5">
+                <div class="flex items-center gap-1.5 shrink-0">
                     <span class="material-symbols-outlined text-primary" style="font-size: 16px;">analytics</span>
                     <span>Porland Ar-Ge Süreçleri</span>
                 </div>
-                <div class="flex items-center gap-1.5">
+                <div class="flex items-center gap-1.5 shrink-0">
                     <span class="material-symbols-outlined text-emerald-600" style="font-size: 16px;">speed</span>
                     <span>Google PageSpeed: 98+</span>
                 </div>
@@ -112,37 +112,37 @@ include __DIR__ . '/includes/header.php';
 
             <!-- Interactive Studio Terminal Frame Mockup (Clean Showcase) -->
             <div class="w-full max-w-2xl mt-12 text-left">
-                <div class="bg-white/95 backdrop-blur-xl rounded-[32px] p-6 sm:p-7 shadow-[0_20px_50px_rgba(139,89,255,0.08)] border border-purple-100/90 card-gradia flex flex-col">
+                <div class="bg-white/95 backdrop-blur-xl rounded-[28px] sm:rounded-[32px] p-4 sm:p-7 shadow-[0_20px_50px_rgba(139,89,255,0.08)] border border-purple-100/90 card-gradia flex flex-col">
                     
                     <!-- Header Bar with Traffic Lights -->
-                    <div class="flex items-center justify-between pb-4 border-b border-purple-50 mb-4">
-                        <div class="flex items-center gap-2">
-                            <span class="w-3 h-3 rounded-full bg-[#ef4444] inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-[#f59e0b] inline-block"></span>
-                            <span class="w-3 h-3 rounded-full bg-[#10b981] inline-block"></span>
+                    <div class="flex items-center justify-between pb-3.5 sm:pb-4 border-b border-purple-50 mb-4 gap-2">
+                        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                            <span class="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-[#ef4444] inline-block"></span>
+                            <span class="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-[#f59e0b] inline-block"></span>
+                            <span class="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-[#10b981] inline-block"></span>
                         </div>
-                        <div class="flex items-center gap-1.5 text-muted font-code text-xs bg-primary-tint px-3 py-1 rounded-full border border-purple-100">
-                            <span class="material-symbols-outlined text-primary" style="font-size: 14px;">terminal</span>
-                            <span>sametuzun.com.tr/profile.json</span>
+                        <div class="flex items-center gap-1.5 text-muted font-code text-[11px] sm:text-xs bg-primary-tint px-2.5 sm:px-3 py-1 rounded-full border border-purple-100 max-w-[190px] sm:max-w-none truncate">
+                            <span class="material-symbols-outlined text-primary shrink-0" style="font-size: 14px;">terminal</span>
+                            <span class="truncate">sametuzun.com.tr/profile.json</span>
                         </div>
-                        <button class="text-muted hover:text-primary transition-colors flex items-center p-1.5 rounded-full hover:bg-primary-tint" id="copy-log-btn" title="Kopyala">
+                        <button class="text-muted hover:text-primary transition-colors flex items-center p-1.5 rounded-full hover:bg-primary-tint shrink-0" id="copy-log-btn" title="Kopyala">
                             <span class="material-symbols-outlined" style="font-size: 18px;">content_copy</span>
                         </button>
                     </div>
 
                     <!-- Terminal Window Body -->
-                    <div class="font-code text-xs space-y-1.5 bg-[#171924] text-slate-200 p-5 rounded-[22px] overflow-x-auto max-h-[300px] sm:max-h-none overflow-y-auto shadow-inner border border-slate-800">
+                    <div class="font-code text-xs space-y-1.5 bg-[#171924] text-slate-200 p-4 sm:p-5 rounded-[20px] sm:rounded-[22px] overflow-x-auto max-h-[300px] sm:max-h-none overflow-y-auto shadow-inner border border-slate-800">
                         <p class="text-purple-300 font-bold">// Samet Uzun — Geliştirici Kartı</p>
                         <p class="text-purple-400">const <span class="text-white">samet</span> = {</p>
-                        <p class="pl-4">name: <span class="text-[#e2ff3b]">"Samet Uzun"</span>,</p>
-                        <p class="pl-4">role: <span class="text-emerald-400">"Full-Stack Web Geliştirici"</span>,</p>
-                        <p class="pl-4">experience: <span class="text-emerald-400">"PixelByte (Web Dev) &amp; Ar-Ge"</span>,</p>
-                        <p class="pl-4">education: <span class="text-emerald-400">"MCBÜ (Mezun) &amp; Anadolu Üniv."</span>,</p>
-                        <p class="pl-4">location: <span class="text-emerald-400">"Bilecik / Eskişehir (Remote)"</span>,</p>
-                        <p class="pl-4">stack: [<span class="text-sky-300">"PHP 8"</span>, <span class="text-sky-300">"MySQL"</span>, <span class="text-sky-300">"Tailwind"</span>, <span class="text-sky-300">"AI Tools"</span>],</p>
-                        <p class="pl-4">status: <span class="text-[#e2ff3b]">"Yeni fikirlere &amp; tanışmalara açık 🚀"</span></p>
+                        <p class="pl-3 sm:pl-4">name: <span class="text-[#e2ff3b]">"Samet Uzun"</span>,</p>
+                        <p class="pl-3 sm:pl-4">role: <span class="text-emerald-400">"Full-Stack Web Geliştirici"</span>,</p>
+                        <p class="pl-3 sm:pl-4">experience: <span class="text-emerald-400">"PixelByte (Web Dev) &amp; Ar-Ge"</span>,</p>
+                        <p class="pl-3 sm:pl-4">education: <span class="text-emerald-400">"MCBÜ (Mezun) &amp; Anadolu Üniv."</span>,</p>
+                        <p class="pl-3 sm:pl-4">location: <span class="text-emerald-400">"Bilecik / Eskişehir (Remote)"</span>,</p>
+                        <p class="pl-3 sm:pl-4">stack: [<span class="text-sky-300">"PHP 8"</span>, <span class="text-sky-300">"MySQL"</span>, <span class="text-sky-300">"Tailwind"</span>, <span class="text-sky-300">"AI Tools"</span>],</p>
+                        <p class="pl-3 sm:pl-4">status: <span class="text-[#e2ff3b]">"Yeni fikirlere &amp; tanışmalara açık 🚀"</span></p>
                         <p class="text-purple-400">};</p>
-                        <div class="bg-slate-800/90 p-2.5 rounded-xl my-2 flex items-center justify-between border border-slate-700/60">
+                        <div class="bg-slate-800/90 p-2 sm:p-2.5 rounded-xl my-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1 border border-slate-700/60">
                             <span class="text-purple-300">samet.sayHello();</span>
                             <span class="text-[#e2ff3b] font-bold">&quot;Birlikte üretelim!&quot;</span>
                         </div>
@@ -153,13 +153,13 @@ include __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Card Footer -->
-                    <div class="flex items-center justify-between pt-4 text-muted font-code text-xs">
-                        <span class="flex items-center gap-1.5">
+                    <div class="flex flex-wrap items-center justify-between gap-2.5 pt-4 text-muted font-code text-[11px] sm:text-xs">
+                        <span class="flex items-center gap-1.5 shrink-0">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                             <strong class="text-secondary">Aktif &amp; Çevrimiçi</strong>
                         </span>
-                        <span>HIZ: <strong class="text-primary">&lt;0.6sn</strong></span>
-                        <span>PAGESPEED: <strong class="text-emerald-600">98+</strong></span>
+                        <span class="shrink-0">HIZ: <strong class="text-primary">&lt;0.6sn</strong></span>
+                        <span class="shrink-0">PAGESPEED: <strong class="text-emerald-600">98+</strong></span>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 2. TECH STACK MARQUEE STRIP -->
-    <section class="w-full py-6 border-y border-purple-100/80 bg-white/70 backdrop-blur-md overflow-hidden">
+    <section class="w-full max-w-full py-6 border-y border-purple-100/80 bg-white/70 backdrop-blur-md overflow-hidden">
         <div class="max-w-6xl mx-auto px-4 mb-3 flex items-center justify-between">
             <span class="text-xs font-bold text-muted uppercase tracking-wider">KULLANDIĞIM TEKNOLOJİLER &amp; ARAÇLAR</span>
             <span class="hidden sm:inline-flex items-center gap-1.5 text-xs text-primary font-semibold">
@@ -177,7 +177,7 @@ include __DIR__ . '/includes/header.php';
             </span>
         </div>
         
-        <div class="mask-fade-x overflow-hidden w-full">
+        <div class="mask-fade-x overflow-hidden w-full max-w-full" style="contain: paint;">
             <div class="animate-marquee flex items-center gap-3 py-1.5">
                 <?php 
                 $techBadges = [
@@ -464,18 +464,18 @@ include __DIR__ . '/includes/header.php';
                     PixelByte bünyesinde geliştirdiğim yapay zeka sistemleri ve sıfırdan hayata geçirdiğim yüksek hızlı web çözümleri.
                 </p>
 
-                <!-- Filter Tabs (Pill Buttons) -->
-                <div class="flex flex-wrap items-center justify-center gap-2 mt-8">
-                    <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-primary text-white shadow-md shadow-primary/20 transition-all" data-filter="all">
+                <!-- Filter Tabs (Pill Buttons with Mobile Touch Scroll) -->
+                <div class="w-full max-w-full overflow-x-auto no-scrollbar pb-2 sm:pb-0 px-1 flex items-center sm:justify-center gap-2 mt-8">
+                    <button class="filter-tab shrink-0 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-primary text-white shadow-md shadow-primary/20 transition-all whitespace-nowrap" data-filter="all">
                         Tümü (<?= count($config['projects']) ?>)
                     </button>
-                    <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all" data-filter="custom">
+                    <button class="filter-tab shrink-0 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all whitespace-nowrap" data-filter="custom">
                         Yapay Zeka &amp; Özel Yazılım
                     </button>
-                    <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all" data-filter="corporate">
+                    <button class="filter-tab shrink-0 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all whitespace-nowrap" data-filter="corporate">
                         Kurumsal &amp; Yönetim Paneli
                     </button>
-                    <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all" data-filter="ecommerce">
+                    <button class="filter-tab shrink-0 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-white text-muted hover:text-primary hover:bg-primary-tint border border-purple-100 transition-all whitespace-nowrap" data-filter="ecommerce">
                         E-Ticaret &amp; POS
                     </button>
                 </div>
@@ -753,8 +753,10 @@ include __DIR__ . '/includes/header.php';
     <section class="relative isolate py-20 sm:py-28 overflow-hidden" id="features-section">
         <span id="collaboration-section" class="sr-only"></span>
         <!-- Subtle Ambient Glow Orbs -->
-        <div class="absolute top-1/4 -left-28 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-1/4 -right-28 w-96 h-96 bg-purple-300/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true" style="contain: paint;">
+            <div class="absolute top-1/4 -left-28 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 -right-28 w-96 h-96 bg-purple-300/10 rounded-full blur-3xl"></div>
+        </div>
 
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
@@ -1108,8 +1110,10 @@ include __DIR__ . '/includes/header.php';
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="relative bg-gradient-to-r from-[#171924] via-[#242734] to-[#5921b2] rounded-[36px] p-8 sm:p-14 text-white text-center overflow-hidden shadow-2xl">
                 <!-- Ambient Glow inside CTA -->
-                <div class="absolute -top-24 -left-24 w-72 h-72 bg-primary/30 rounded-full blur-3xl pointer-events-none"></div>
-                <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-[#c14ef3]/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true" style="contain: paint;">
+                    <div class="absolute -top-24 -left-24 w-72 h-72 bg-primary/30 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-24 -right-24 w-72 h-72 bg-[#c14ef3]/20 rounded-full blur-3xl"></div>
+                </div>
 
                 <div class="relative z-10 max-w-2xl mx-auto space-y-6">
                     <span class="px-4 py-1.5 rounded-full bg-[#e2ff3b] text-[#171924] font-black text-xs uppercase tracking-wider inline-block">

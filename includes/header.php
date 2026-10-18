@@ -5,7 +5,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="<?= htmlspecialchars($config['site']['lang']) ?>">
+<html class="scroll-smooth overflow-x-hidden" lang="<?= htmlspecialchars($config['site']['lang']) ?>">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
@@ -141,6 +141,20 @@
             mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
             -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
         }
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 3s ease-in-out infinite;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 
     <!-- Tailwind CSS CDN -->
@@ -179,8 +193,8 @@
 <body class="bg-[#faf9ff] font-sans text-secondary antialiased min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-primary/20 selection:text-primary">
 
 <!-- Floating Glass Pill Navbar (Gradia Signature) -->
-<header class="fixed top-4 sm:top-6 left-0 right-0 w-full z-50 px-4 sm:px-6 pointer-events-none">
-    <div class="max-w-5xl mx-auto bg-white/80 backdrop-blur-xl border border-white/90 shadow-[0_12px_40px_rgba(139,89,255,0.08)] rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between pointer-events-auto transition-all">
+<header class="fixed top-3 sm:top-6 inset-x-0 z-50 px-3 sm:px-6 pointer-events-none">
+    <div class="max-w-5xl mx-auto bg-white/85 backdrop-blur-xl border border-white/90 shadow-[0_12px_40px_rgba(139,89,255,0.08)] rounded-full px-3.5 sm:px-6 py-2 sm:py-3 flex items-center justify-between pointer-events-auto transition-all">
         
         <!-- Logo & Brand (Clean 1-Line Gradia Style) -->
         <a class="flex items-center gap-2.5 group shrink-0" href="#">
@@ -210,14 +224,15 @@
                 </a>
             <?php endif; ?>
 
-            <a class="inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white text-xs sm:text-sm font-bold transition-all shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] active:scale-95" href="#contact-section">
+            <a class="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-primary to-primary-dark hover:from-primary-dark hover:to-primary text-white text-xs sm:text-sm font-bold transition-all shadow-md shadow-primary/25 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] active:scale-95" href="#contact-section">
                 <span>İletişime Geç</span>
                 <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
             </a>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full bg-primary-tint text-secondary hover:text-primary transition-colors" aria-label="Menüyü Aç">
-                <span class="material-symbols-outlined" id="mobile-menu-icon" style="font-size: 20px;">menu</span>
+            <!-- Mobile Menu Toggle Button (Clean & Compact Pill) -->
+            <button id="mobile-menu-btn" class="md:hidden flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-primary-tint text-secondary hover:text-primary border border-purple-100 transition-colors shadow-sm" aria-label="Menüyü Aç">
+                <span class="material-symbols-outlined" id="mobile-menu-icon" style="font-size: 18px;">menu</span>
+                <span class="text-xs font-bold">Menü</span>
             </button>
         </div>
     </div>
@@ -242,10 +257,10 @@
     </div>
 </header>
 
-<main class="w-full pt-28 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate overflow-hidden bg-[#faf9ff]">
+<main class="w-full max-w-full pt-28 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate overflow-hidden bg-[#faf9ff]">
 
     <!-- Main Content Background: Signature Pinstripe & Pastel Auras -->
-    <div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true" style="contain: paint;">
         <!-- Continuous Diagonal Pinstripe Pattern across all sections -->
         <div class="absolute inset-0 gradia-pinstripe-bg opacity-75"></div>
         
