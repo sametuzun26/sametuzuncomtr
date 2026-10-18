@@ -15,3 +15,6 @@ screen.png
 
 # Local messages (keep .gitkeep / empty template)
 # data/messages.json
+
+# Local backups
+backup_cyber/
