@@ -147,6 +147,7 @@
         <span class="hidden sm:inline">WhatsApp İletişim</span>
     </a>
 </div>
+<?php endif; ?>
 
 <!-- Mobile Bottom Floating Action Dock (Gradia Glass Pill Navbar) -->
 <nav class="sm:hidden fixed bottom-3 left-3 right-3 z-40 bg-white/92 backdrop-blur-xl border border-purple-100 rounded-full py-2 px-3 flex items-center justify-around shadow-[0_12px_36px_rgba(139,89,255,0.14)]" aria-label="Mobil Gezinme">
@@ -154,7 +155,7 @@
         <span class="material-symbols-outlined text-primary" style="font-size: 20px;">rocket_launch</span>
         <span class="text-[10px] font-bold">Projeler</span>
     </a>
-    <a href="#skills-section" class="flex flex-col items-center gap-1 text-muted hover:text-primary active:scale-95 transition-all py-1 px-3">
+    <a href="#capabilities" class="flex flex-col items-center gap-1 text-muted hover:text-primary active:scale-95 transition-all py-1 px-3">
         <span class="material-symbols-outlined" style="font-size: 20px;">terminal</span>
         <span class="text-[10px] font-bold">Yetenekler</span>
     </a>
@@ -167,7 +168,6 @@
         <span class="text-[10px] font-bold">İletişim</span>
     </a>
 </nav>
-<?php endif; ?>
 
 <!-- Interactive Project Case Study Lightbox / Modal (Gradia Style) -->
 <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-secondary/80 backdrop-blur-md transition-opacity duration-300">

@@ -208,7 +208,8 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 4. CAPABILITIES / UZMANLIKLAR (Gradia Signature 3 Colorful Cards) -->
-    <section class="py-20 sm:py-28" id="capabilities">
+    <section class="py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24" id="capabilities">
+        <span id="skills-section" class="sr-only"></span>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="px-3.5 py-1 rounded-full bg-primary-tint text-primary text-xs font-bold tracking-wider uppercase mb-2 inline-block">YETENEKLER &amp; UZMANLIKLAR</span>
@@ -382,7 +383,7 @@ include __DIR__ . '/includes/header.php';
 
     <!-- 5. GRADIA 5-STEP PROCESS WORKFLOW ("Nasıl Çalışıyoruz?") -->
     <!-- 5. ÇALIŞMA SÜRECİ & İŞ AKIŞI -->
-    <section class="py-20 sm:py-28" id="process-section">
+    <section class="py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24" id="process-section">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="px-3.5 py-1 rounded-full bg-primary-tint text-primary text-xs font-bold tracking-wider uppercase mb-2 inline-block">İŞ AKIŞI &amp; YÖNTEM</span>
@@ -451,7 +452,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 6. FEATURED PROJECTS VITRINI (Gradia Style Showcase) -->
-    <section class="py-20 sm:py-28" id="work-section">
+    <section class="py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24" id="work-section">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <!-- Section Header -->
@@ -594,7 +595,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 7. HAKKIMDA & HİKAYEM (Story & Academic Credentials) -->
-    <section class="py-20 sm:py-28" id="about-section">
+    <section class="py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24" id="about-section">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
                 
@@ -704,7 +705,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 8. KARİYER & DENEYİM YOLCULUĞU (Timeline) -->
-    <section class="py-20 sm:py-28" id="journey-section">
+    <section class="py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24" id="journey-section">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="px-3.5 py-1 rounded-full bg-primary-tint text-primary text-xs font-bold tracking-wider uppercase mb-2 inline-block">GELİŞİM SÜRECİ</span>
@@ -750,7 +751,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 9. MÜHENDİSLİK & KALİTE STANDARTLARI (Özgün Mimari Grid) -->
-    <section class="relative isolate py-20 sm:py-28 overflow-hidden" id="features-section">
+    <section class="relative isolate py-20 sm:py-28 scroll-mt-20 sm:scroll-mt-24 overflow-hidden" id="features-section">
         <span id="collaboration-section" class="sr-only"></span>
         <!-- Subtle Ambient Glow Orbs -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true" style="contain: paint;">
@@ -1147,7 +1148,7 @@ include __DIR__ . '/includes/header.php';
     </section>
 
     <!-- 14. CONTACT FORM (Gradia Card) -->
-    <section class="py-16 sm:py-24" id="contact-section">
+    <section class="py-16 sm:py-24 scroll-mt-20 sm:scroll-mt-24" id="contact-section">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white/95 backdrop-blur-md rounded-[32px] p-8 sm:p-12 shadow-[0_16px_50px_rgba(139,89,255,0.06)] border border-purple-100">
                 
