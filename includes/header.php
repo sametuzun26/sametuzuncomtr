@@ -214,12 +214,15 @@
             <?php endforeach; ?>
         </nav>
 
-        <!-- Right Action Button & Mobile Toggle -->
-        <div class="flex items-center gap-2.5">
+        <!-- Right Action Buttons (Direct CV Download on Mobile & Desktop) -->
+        <div class="flex items-center gap-2 sm:gap-2.5">
             <?php if (!empty($config['profile']['cv_url'])): ?>
-                <a class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-secondary hover:text-primary bg-primary-tint hover:bg-primary-light text-xs font-bold border border-purple-100 transition-all" href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" target="_blank">
+                <a class="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-secondary hover:text-primary bg-primary-tint hover:bg-primary-light text-xs font-bold border border-purple-100 transition-all shadow-sm active:scale-95 shrink-0" 
+                   href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" 
+                   target="_blank"
+                   title="Samet Uzun Özgeçmişini (CV) İndir">
                     <span class="material-symbols-outlined text-primary" style="font-size: 16px;">description</span>
-                    <span>CV İndir</span>
+                    <span>CV<span class="hidden sm:inline"> İndir</span></span>
                 </a>
             <?php endif; ?>
 
@@ -227,36 +230,11 @@
                 <span>İletişime Geç</span>
                 <span class="material-symbols-outlined ml-1" style="font-size: 16px;">arrow_forward</span>
             </a>
-
-            <!-- Mobile Menu Toggle Button (Clean & Compact Pill) -->
-            <button id="mobile-menu-btn" class="md:hidden flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-primary-tint text-secondary hover:text-primary border border-purple-100 transition-colors shadow-sm" aria-label="Menüyü Aç">
-                <span class="material-symbols-outlined" id="mobile-menu-icon" style="font-size: 18px;">menu</span>
-                <span class="text-xs font-bold">Menü</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- Mobile Drawer Menu (Glass Dropdown) -->
-    <div id="mobile-menu" class="hidden md:hidden max-w-sm mx-auto mt-3 bg-white/95 backdrop-blur-xl border border-purple-100 rounded-3xl p-5 shadow-2xl space-y-3 pointer-events-auto">
-        <nav class="flex flex-col space-y-2">
-            <?php foreach ($config['nav'] as $item): ?>
-                <a class="mobile-nav-link text-sm font-semibold text-secondary hover:text-primary py-2 px-3 rounded-2xl hover:bg-primary-tint transition-colors" href="<?= htmlspecialchars($item['href']) ?>">
-                    <?= htmlspecialchars($item['label']) ?>
-                </a>
-            <?php endforeach; ?>
-        </nav>
-        <div class="pt-3 border-t border-purple-50 flex flex-col gap-2">
-            <?php if (!empty($config['profile']['cv_url'])): ?>
-                <a class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-full bg-primary-tint text-secondary hover:text-primary text-xs font-bold border border-purple-100" href="<?= htmlspecialchars($config['profile']['cv_url']) ?>" target="_blank">
-                    <span class="material-symbols-outlined mr-1.5 text-primary" style="font-size: 16px;">description</span>
-                    <span>Özgeçmişimi İndir (PDF)</span>
-                </a>
-            <?php endif; ?>
         </div>
     </div>
 </header>
 
-<main class="w-full max-w-full pt-28 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate bg-[#faf9ff]">
+<main class="w-full max-w-full pt-24 sm:pt-32 pb-20 sm:pb-0 flex-1 relative isolate bg-[#faf9ff]">
 
     <!-- Main Content Background: Signature Pinstripe & Pastel Auras -->
     <div class="absolute inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true" style="contain: paint;">

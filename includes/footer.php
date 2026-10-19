@@ -274,33 +274,7 @@
         }
     });
 
-    // 1. Mobile Menu Toggle
-    const mobileBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileIcon = document.getElementById('mobile-menu-icon');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-    if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.contains('hidden');
-            if (isHidden) {
-                mobileMenu.classList.remove('hidden');
-                if (mobileIcon) mobileIcon.textContent = 'close';
-            } else {
-                mobileMenu.classList.add('hidden');
-                if (mobileIcon) mobileIcon.textContent = 'menu';
-            }
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                if (mobileIcon) mobileIcon.textContent = 'menu';
-            });
-        });
-    }
-
-    // 2. Tab Filter Interaction for Projects (Pill Style)
+    // 1. Tab Filter Interaction for Projects (Pill Style)
     const filterButtons = document.querySelectorAll('.filter-tab');
     const projectCards = document.querySelectorAll('.project-card');
 
